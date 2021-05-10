@@ -2,6 +2,7 @@
 import os
 import re
 
+import class_spells
 import mule_list
 
 garbage = ["Short Sword*",
@@ -19,8 +20,10 @@ garbage = ["Short Sword*",
            "Colorfully Patched Tunic*"
            ]
 
+
+
 inventory_path = ".." + os.sep + "equi" + os.sep
-min_number_to_sell = 3
+min_number_to_sell = 2
 
 class Inventory:
     def __init__(self, name):
@@ -31,13 +34,6 @@ class Inventory:
         for item in inventory:
             self.inventory.append(item)
 
-    # def __str__(self):
-    #     output = self.name
-    #     for item in self.inventory:
-    #         output += ",{}".format(item)
-    #     return output
-    #     #return "{}\n{}".format(self.name, self.inventory)
-
 
 def main():
     master_spell_list = []
@@ -46,20 +42,37 @@ def main():
         spells = get_spells(mule)
         if spells:
             master_spell_list.extend(spells)
-    # for spell in master_spell_list:
-    #     print spell
+    # Count all the spells
     for counter in range(len(master_spell_list)):
         spell_dict[master_spell_list[counter]] = master_spell_list.count(
             master_spell_list[counter]
             )
-    print spell_dict
-    sell_list = []
+    # Print the spell and number in alphabetical order
+    for key in sorted(spell_dict.keys()):
+        print(key, spell_dict[key])
+
+
+    for class_name in class_spells.classes:
+        print("")
+        print("**{} Spells**".format(class_name.capitalize()))
+        for spell in spell_dict:
+            if spell in class_spells.classes[class_name]:
+                if spell_dict[spell] >= min_number_to_sell:
+                    print_spell(spell)
+
+        print("")
+
     for spell in spell_dict:
-        if spell_dict[spell] >= min_number_to_sell:
-            sell_list.append(spell)
-    sell_list.sort()
-    for spell in sell_list:
-        print spell
+        found = False
+        for class_name in class_spells.classes:
+            if spell in class_spells.classes[class_name]:
+                found = True
+        if not found:
+            print("Did not find {}".format(spell))
+
+
+def print_spell(spell):
+    print(spell.replace("`", "'"))
 
 
 def get_spells(mule_name):

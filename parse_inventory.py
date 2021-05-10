@@ -1,5 +1,4 @@
 # parse inventory
-import os
 import re
 import sys
 
@@ -30,10 +29,14 @@ def main():
     if inventory:
         print(toon)
         print(inventory)
+        for item in inventory:
+            print(item)
+    else:
+        print("Nothing to see here")
 
 
 def get_inventory(mule_name):
-    file_name = ".." + os.sep + mule_name + "-Inventory.txt"
+    file_name = mule_name + "-Inventory.txt"
     item_list = []
     try:
         with open(file_name) as inventory:
@@ -42,6 +45,7 @@ def get_inventory(mule_name):
                 if split_line[1] not in garbage:
                     item_list.append(split_line[1])
     except:
+        print(mule_name + " not found.")
         pass
     return item_list
 
