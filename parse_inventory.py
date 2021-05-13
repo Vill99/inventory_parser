@@ -15,7 +15,9 @@ garbage = ["Short Sword*",
            "Tome of Order and Discord",
            "Club*",
            "Backpack",
-           "Large Sewing Kit"
+           "Large Sewing Kit",
+           "Hand Made Backpack",
+           "Large Box"
            ]
 
 def main():
