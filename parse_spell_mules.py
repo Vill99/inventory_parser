@@ -23,7 +23,7 @@ garbage = ["Short Sword*",
 
 
 inventory_path = ".." + os.sep + "equi" + os.sep
-min_number_to_sell = 2
+min_number_to_sell = 3
 
 class Inventory:
     def __init__(self, name):

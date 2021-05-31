@@ -18,6 +18,8 @@ garbage = ["Short Sword*",
            "Large Sewing Kit"
            ]
 
+inventory_path = ".." + os.sep + "equi" + os.sep
+
 class Inventory:
     def __init__(self, name):
         self.name = name
@@ -49,7 +51,7 @@ def main():
 
 
 def get_inventory(mule_name):
-    file_name = ".." + os.sep + mule_name + "-Inventory.txt"
+    file_name = inventory_path + mule_name + "-Inventory.txt"
     item_list = []
     try:
         with open(file_name) as inventory:
