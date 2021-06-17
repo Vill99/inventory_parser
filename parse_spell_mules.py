@@ -1,6 +1,7 @@
 # parse inventory
 import os
 import re
+import sys
 
 import class_spells
 import mule_list
@@ -23,7 +24,7 @@ garbage = ["Short Sword*",
 
 
 inventory_path = ".." + os.sep + "equi" + os.sep
-min_number_to_sell = 3
+
 
 class Inventory:
     def __init__(self, name):
@@ -36,6 +37,10 @@ class Inventory:
 
 
 def main():
+    try:
+        min_number_to_sell = int(sys.argv[1])
+    except:
+        min_number_to_sell = 3
     master_spell_list = []
     spell_dict = {}
     for mule in mule_list.spellmules:
