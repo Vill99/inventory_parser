@@ -2,6 +2,7 @@ classes = {
 
     'cleric': [
         "Improved Invis to Undead",
+        'Word of Souls',
         "Death Pact",
         "Sunskin",
         "Heroic Bond",
@@ -23,7 +24,8 @@ classes = {
         "Banishment of Shadows",
         "Divine Intervention",
         "Word of Redemption",
-        "Exile Undead"
+        "Exile Undead",
+        "Improved Invis vs Undead"
     ],
     'druid': [
         "Repulse Animal",
@@ -55,7 +57,10 @@ classes = {
         "Entrapping Roots",
         "Form of the Hunter",
         "Mask of the Hunter",
-        "Protection of the Glades"
+        "Protection of the Glades",
+        "Circle of Great Divide",
+        "Circle of Wakening Lands",
+        "Circle of Cobalt Scar"
     ],
     'enchanter': [
         "Ultravision",
@@ -123,6 +128,8 @@ classes = {
         "Monster Summoning III"
     ],
     'necromancer': [
+        'Harmshield',
+        'Word of Souls',
         "Malignant Dead",
         "Chilling Embrace",
         "Corporeal Empathy",
@@ -156,7 +163,8 @@ classes = {
         "Gangrenous Touch of Zum`uul",
         "Trucidation",
         "Summon Corpse",
-        "Exile Undead"
+        "Exile Undead",
+        "Improved Invis vs Undead"
     ],
     'wizard': [
         "Gravity Flux",
@@ -202,7 +210,8 @@ classes = {
         "Porlos` Fury",
         "Sunstrike",
         "Winds of Gelid",
-        "Ice Comet"
+        "Ice Comet",
+        "Great Divide Portal"
     ],
     'shaman': [
         "Ultravision",
@@ -237,29 +246,30 @@ classes = {
         "Primal Avatar",
         "Torpor"
     ],
-    # 'paladin': [
-    #     "Flame of Light",
-    #     "Wave of Healing",
-    #     "Divine Strength",
-    #     "Yaulp IV"
-    # ],
-    # 'bard': [
-    #     "Melody of Ervaj",
-    #     "Occlusion of Sound",
-    #     "Composition of Ervaj"
-    # ],
-    # 'ranger': [
-    #     "Call of Earth",
-    #     "Call of Flame",
-    #     "Call of Fire",
-    #     "Call of the Predator"
-    # ],
-    # 'shadow knight': [
-    #     "Shroud of Pain",
-    #     "Summon Corpse",
-    #     "Shroud of Death",
-    #     "Shroud of Undeath",
-    #     "Death Peace"
-    # ]
+    'paladin': [
+        "Flame of Light",
+        "Wave of Healing",
+        "Divine Strength",
+        "Yaulp IV"
+    ],
+    'bard': [
+        "Melody of Ervaj",
+        "Occlusion of Sound",
+        "Composition of Ervaj"
+    ],
+    'ranger': [
+        "Call of Earth",
+        "Call of Flame",
+        "Call of Fire",
+        "Call of the Predator"
+    ],
+    'shadow knight': [
+        "Shroud of Hate",
+        "Shroud of Pain",
+        "Summon Corpse",
+        "Shroud of Death",
+        "Shroud of Undeath",
+        "Death Peace"
+    ]
 
 }

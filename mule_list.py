@@ -32,6 +32,8 @@ spellmules = [
     'Shamospells',
     'Spellsdump',
     'Wizzospells',
+    'Drubox',
+    'Hybridbox',
     'Magebox',
     'Scrollbox',
     'Spellbox',

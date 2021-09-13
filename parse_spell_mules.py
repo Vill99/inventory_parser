@@ -18,7 +18,8 @@ garbage = ["Short Sword*",
            "Club*",
            "Backpack",
            "Large Sewing Kit",
-           "Colorfully Patched Tunic*"
+           "Colorfully Patched Tunic*",
+           "Elemental Grimoire"
            ]
 
 
@@ -41,6 +42,10 @@ def main():
         min_number_to_sell = int(sys.argv[1])
     except:
         min_number_to_sell = 3
+    try:
+        max_number_to_sell = int(sys.argv[2])
+    except:
+        max_number_to_sell = 99
     master_spell_list = []
     spell_dict = {}
     for mule in mule_list.spellmules:
@@ -56,15 +61,14 @@ def main():
     for key in sorted(spell_dict.keys()):
         print(key, spell_dict[key])
 
-
     for class_name in class_spells.classes:
         print("")
         print("**{} Spells**".format(class_name.capitalize()))
         for spell in spell_dict:
             if spell in class_spells.classes[class_name]:
                 if spell_dict[spell] >= min_number_to_sell:
-                    print_spell(spell)
-
+                    if spell_dict[spell] <= max_number_to_sell:
+                        print_spell(spell)
         print("")
 
     for spell in spell_dict:
@@ -80,6 +84,14 @@ def print_spell(spell):
     print(spell.replace("`", "'"))
 
 
+def is_spell_or_song(scroll):
+    if scroll.startswith("Spell: "):
+        return True
+    if scroll.startswith("Song: "):
+        return True
+    return False
+
+
 def get_spells(mule_name):
     file_name = inventory_path + mule_name + "-Inventory.txt"
     spell_list = []
@@ -87,10 +99,19 @@ def get_spells(mule_name):
         with open(file_name) as inventory:
             for line in inventory:
                 split_line = re.split(r'\t+', line.rstrip('\t'))
+
                 if split_line[1] not in garbage:
-                    if split_line[1].startswith("Spell: "):
-                        spell_name = split_line[1].split("Spell: ")
-                        spell_list.append(spell_name[1])
+                    if is_spell_or_song(split_line[1]):
+                        try:
+                            spell_name = split_line[1].split("Spell: ")
+                            spell_list.append(spell_name[1])
+                        except:
+                            pass
+                        try:
+                            song_name = split_line[1].split("Song: ")
+                            spell_list.append(song_name[1])
+                        except:
+                            pass
     except:
         pass
     return spell_list
