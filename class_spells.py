@@ -167,6 +167,7 @@ classes = {
         "Improved Invis vs Undead"
     ],
     'wizard': [
+        "Invisibility to Undead",
         "Gravity Flux",
         "Supernova",
         "Enticement of Flame",
@@ -211,7 +212,8 @@ classes = {
         "Sunstrike",
         "Winds of Gelid",
         "Ice Comet",
-        "Great Divide Portal"
+        "Great Divide Portal",
+        "Cobalt Scar Portal"
     ],
     'shaman': [
         "Ultravision",
