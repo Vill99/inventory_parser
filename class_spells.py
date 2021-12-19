@@ -25,7 +25,7 @@ classes = {
         "Divine Intervention",
         "Word of Redemption",
         "Exile Undead",
-        "Improved Invis vs Undead"
+        "Improved Invis vs Undead",
     ],
     'druid': [
         "Repulse Animal",
@@ -60,7 +60,7 @@ classes = {
         "Protection of the Glades",
         "Circle of Great Divide",
         "Circle of Wakening Lands",
-        "Circle of Cobalt Scar"
+        "Circle of Cobalt Scar",
     ],
     'enchanter': [
         "Ultravision",
@@ -91,7 +91,7 @@ classes = {
         "Dictate",
         "Gift of Brilliance",
         "Visions of Grandeur",
-        "Wind of Tishanian"
+        "Wind of Tishanian",
     ],
     'magician': [
         "Summon Shard of the Core",
@@ -125,7 +125,8 @@ classes = {
         "Banishment",
         "Greater Vocaration: Water",
         "Mala",
-        "Monster Summoning III"
+        "Monster Summoning III",
+        "Burnout IV",
     ],
     'necromancer': [
         'Harmshield',
@@ -164,7 +165,7 @@ classes = {
         "Trucidation",
         "Summon Corpse",
         "Exile Undead",
-        "Improved Invis vs Undead"
+        "Improved Invis vs Undead",
     ],
     'wizard': [
         "Invisibility to Undead",
@@ -213,7 +214,7 @@ classes = {
         "Winds of Gelid",
         "Ice Comet",
         "Great Divide Portal",
-        "Cobalt Scar Portal"
+        "Cobalt Scar Portal",
     ],
     'shaman': [
         "Ultravision",
@@ -246,24 +247,24 @@ classes = {
         "Focus of Spirit",
         "Malo",
         "Primal Avatar",
-        "Torpor"
+        "Torpor",
     ],
     'paladin': [
         "Flame of Light",
         "Wave of Healing",
         "Divine Strength",
-        "Yaulp IV"
+        "Yaulp IV",
     ],
     'bard': [
         "Melody of Ervaj",
         "Occlusion of Sound",
-        "Composition of Ervaj"
+        "Composition of Ervaj",
     ],
     'ranger': [
         "Call of Earth",
         "Call of Flame",
         "Call of Fire",
-        "Call of the Predator"
+        "Call of the Predator",
     ],
     'shadow knight': [
         "Shroud of Hate",
@@ -271,7 +272,7 @@ classes = {
         "Summon Corpse",
         "Shroud of Death",
         "Shroud of Undeath",
-        "Death Peace"
+        "Death Peace",
     ]
 
 }

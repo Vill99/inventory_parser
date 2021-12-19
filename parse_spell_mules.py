@@ -23,7 +23,6 @@ garbage = ["Short Sword*",
            ]
 
 
-
 inventory_path = ".." + os.sep + "equi" + os.sep
 
 
@@ -38,29 +37,11 @@ class Inventory:
 
 
 def main():
-    try:
-        min_number_to_sell = int(sys.argv[1])
-    except:
-        min_number_to_sell = 3
-    try:
-        max_number_to_sell = int(sys.argv[2])
-    except:
-        max_number_to_sell = 99
-    master_spell_list = []
-    spell_dict = {}
-    for mule in mule_list.spellmules:
-        spells = get_spells(mule)
-        if spells:
-            master_spell_list.extend(spells)
-    # Count all the spells
-    for counter in range(len(master_spell_list)):
-        spell_dict[master_spell_list[counter]] = master_spell_list.count(
-            master_spell_list[counter]
-            )
-    # Print the spell and number in alphabetical order
-    for key in sorted(spell_dict.keys()):
-        print(key, spell_dict[key])
-
+    min_number_to_sell, max_number_to_sell = get_sell_ranges()
+    spell_dict = create_spell_dict()
+    spell_counts = spell_count(spell_dict)
+    for spell in spell_counts:
+        print(spell)
     for class_name in class_spells.classes:
         print("")
         print("**{} Spells**".format(class_name.capitalize()))
@@ -79,6 +60,41 @@ def main():
         if not found:
             print("Did not find {}".format(spell))
 
+
+def get_sell_ranges():
+    try:
+        min_number_to_sell = int(sys.argv[1])
+    except:
+        min_number_to_sell = 3
+    try:
+        max_number_to_sell = int(sys.argv[2])
+    except:
+        max_number_to_sell = 99
+    return min_number_to_sell, max_number_to_sell
+
+
+def create_spell_dict():
+    master_spell_list = []
+    spell_dict = {}
+    for mule in mule_list.spellmules:
+        spells = get_spells(mule)
+        if spells:
+            master_spell_list.extend(spells)
+    # Count all the spells
+    for counter in range(len(master_spell_list)):
+        spell_dict[master_spell_list[counter]] = master_spell_list.count(
+            master_spell_list[counter]
+            )
+    return spell_dict
+
+
+def spell_count(spell_dict):
+    """Print the spell and number in alphabetical order."""
+    spell_counts = []
+    for key in sorted(spell_dict.keys()):
+        #print(key, spell_dict[key])
+        spell_counts.append([key, spell_dict[key]])
+    return spell_counts
 
 def print_spell(spell):
     print(spell.replace("`", "'"))
