@@ -5,6 +5,8 @@ import class_spells
 import parse_spell_mules
 
 
+price_file = "spell_prices-2021-12-29.py"
+
 class Spell:
     def __init__(self, name, external, internal):
         self.name = name
@@ -40,7 +42,6 @@ def main():
     spell_dict = parse_spell_mules.create_spell_dict()
     spell_count = parse_spell_mules.spell_count(spell_dict)
     spell_list = []
-    price_file = "spell_prices-2021-12-18.py"
     with open("pricing_work" + os.sep + price_file) as spell_prices:
         for spell in spell_prices:
             name = spell.split(",")[0]
