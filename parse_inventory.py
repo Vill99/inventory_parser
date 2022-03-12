@@ -1,4 +1,7 @@
 # parse inventory
+"""This script just scripts a single inventory for a toon, and
+outputs a list of items."""
+
 import re
 import sys
 

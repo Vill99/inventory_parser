@@ -1,4 +1,6 @@
-*
+pricing_work
+*.pyc
+.DS_Store
 !.gitignore
 !*.py
 !*.csv

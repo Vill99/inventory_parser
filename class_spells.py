@@ -1,3 +1,5 @@
+"""Missing from this list are all the research spells."""
+
 classes = {
 
     'cleric': [

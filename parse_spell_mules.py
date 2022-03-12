@@ -1,4 +1,8 @@
-# parse inventory
+"""Parse spell mules inventories. It will give first a list of
+all the spells and the counts. Then it will output a slightly
+nicely formatted list of spells to place in a WTS post in discord.
+"""
+
 import os
 import re
 import sys
