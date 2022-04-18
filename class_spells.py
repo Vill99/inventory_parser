@@ -1,4 +1,8 @@
-"""Missing from this list are all the research spells."""
+"""Missing from this list are all the research spells.
+
+This is intended more for use as the list of spells to sell from the bank.
+
+"""
 
 classes = {
 

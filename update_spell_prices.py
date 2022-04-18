@@ -1,13 +1,28 @@
-# update spell prices.
-# get the 3 files as parameters:
-# open the spell_prices file.
-# open the spell_counts file.
-# open the unixgeek prices.
-#
+# Give info on updating spell prices.
+
 import argparse
 import os
 import re
 import sys
+
+
+def get_args():
+    """Get arguments from the command line.
+    You can update the defaults here, as new versions of these files are
+    created, or simply put them on the command line.
+    """
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--prices", "-p",
+                        default="spell_prices-2022-03-11.py",
+                        help="The spell prices file from last month")
+    parser.add_argument("--counts", "-c",
+                        default="spell_counts-2022-03-11.py",
+                        help="The spell counts file, current")
+    parser.add_argument("--unixgeek", "-u",
+                        default="unixgeekPrices2022-03-11.csv",
+                        help="The unixgeek spell prices file")
+    args = parser.parse_args()
+    return args
 
 
 class Spell():
@@ -48,7 +63,6 @@ class UpdateSpells():
 
         self.args = args
         self.work = "price_data" + os.sep
-        self.spell_list = []
         self.spell_dict = {}
 
 
@@ -71,12 +85,12 @@ class UpdateSpells():
             except:
                 pass
 
+
     def needs_pricing(self):
         print("\nThe following spells do not have pricing:\n")
         for spell in self.spell_dict.values():
             try:
                 if spell.internal in (None, "None") or spell.external in (None, "None"):
-
                     if int(spell.count) > 0:
                         print(spell)
             except:
@@ -103,16 +117,13 @@ class UpdateSpells():
                 if spell.external and spell.external != "None":
                     pass
 
+
     def load_prices(self):
-        #print(self.args.prices)
         with open(self.work + self.args.prices) as prices:
             for line in prices:
                 #print(line.strip().split(','))
                 try:
-                    #result = re.search('\"(.*)\"', line)
-                    #self.count_list.append(result.group(1))
                     spell_name = line.split(',')[0].strip('\"')
-                    #self.spell_list.append(line.split(',')[0].strip('\"'))
                 except:
                     spell_name = None
                 try:
@@ -124,15 +135,10 @@ class UpdateSpells():
                 except:
                     internal = None
                 if spell_name:
-                    self.spell_list.append(Spell(spell_name, external, internal))
                     self.spell_dict[spell_name] = Spell(spell_name, external, internal)
 
-        # for spell in self.spell_dict.values():
-        #     print spell
-        #print(self.spell_list)
 
     def load_counts(self):
-        #print(self.args.counts)
         with open(self.work + self.args.counts) as counts:
             for line in counts:
                 #self.count_list.append(line.split(',')[0])
@@ -154,10 +160,7 @@ class UpdateSpells():
                         external = self.spell_dict[spell_name].external
                         internal = self.spell_dict[spell_name].internal
                         self.spell_dict[spell_name] = Spell(spell_name, external, internal, count)
-                #print(spell_name, count)
-        #print(self.count_list)
-        # for spell in self.spell_dict.values():
-        #     print spell
+
 
     def load_unixgeek(self):
         # print(self.args.unixgeek)
@@ -186,22 +189,6 @@ class UpdateSpells():
                         count = self.spell_dict[spell_name].count
                         self.spell_dict[spell_name] = Spell(spell_name, external, internal, count, geekprice, geekcount)
 
-
-
-def get_args():
-    """Get arguments from the command line."""
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--prices", "-p",
-                        default="spell_prices-2022-03-11.py",
-                        help="The spell prices file from last month")
-    parser.add_argument("--counts", "-c",
-                        default="spell_counts-2022-03-11.py",
-                        help="The spell counts file, current")
-    parser.add_argument("--unixgeek", "-u",
-                        default="unixgeekPrices2022-03-11.csv",
-                        help="The unixgeek spell prices file")
-    args = parser.parse_args()
-    return args
 
 
 def main():
