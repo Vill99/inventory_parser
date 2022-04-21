@@ -67,6 +67,7 @@ classes = {
         "Circle of Great Divide",
         "Circle of Wakening Lands",
         "Circle of Cobalt Scar",
+        "Fixation of Ro",
     ],
     'enchanter': [
         "Ultravision",

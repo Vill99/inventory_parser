@@ -12,15 +12,21 @@ def get_args():
     created, or simply put them on the command line.
     """
     parser = argparse.ArgumentParser()
-    parser.add_argument("--prices", "-p",
-                        default="spell_prices-2022-03-11.py",
-                        help="The spell prices file from last month")
-    parser.add_argument("--counts", "-c",
-                        default="spell_counts-2022-03-11.py",
-                        help="The spell counts file, current")
-    parser.add_argument("--unixgeek", "-u",
-                        default="unixgeekPrices2022-03-11.csv",
-                        help="The unixgeek spell prices file")
+    parser.add_argument(
+        "--prices", "-p",
+        default="spell_prices-2022-04-21.py",
+        help="The spell prices file from last month"
+    )
+    parser.add_argument(
+        "--counts", "-c",
+        default="spell_counts-2022-04-21.py",
+        help="The spell counts file, current"
+    )
+    parser.add_argument(
+        "--unixgeek", "-u",
+        default="unixgeekPrices2022-04-21.csv",
+        help="The unixgeek spell prices file"
+    )
     args = parser.parse_args()
     return args
 

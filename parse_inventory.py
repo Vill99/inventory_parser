@@ -7,21 +7,22 @@ import sys
 
 import mule_list
 
-garbage = ["Short Sword*",
-           "A Worn Candle",
-           "Skin of Milk",
-           "Bread Cakes*",
-           "Empty",
-           "Name",
-           "Song: Chant of Battle*",
-           "A tattered note",
-           "Tome of Order and Discord",
-           "Club*",
-           "Backpack",
-           "Large Sewing Kit",
-           "Hand Made Backpack",
-           "Large Box"
-           ]
+garbage = [
+    "Short Sword*",
+    "A Worn Candle",
+    "Skin of Milk",
+    "Bread Cakes*",
+    "Empty",
+    "Name",
+    "Song: Chant of Battle*",
+    "A tattered note",
+    "Tome of Order and Discord",
+    "Club*",
+    "Backpack",
+    "Large Sewing Kit",
+    "Hand Made Backpack",
+    "Large Box"
+]
 
 def main():
     try:

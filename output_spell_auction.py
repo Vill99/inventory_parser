@@ -12,8 +12,13 @@ google sheet
 
 Do a file -> Download -> .csv
 
-Save that file in pricing_work, named accordingly.
+Save that file in price_data, named accordingly.
 
+Create the spell_counts file using parse_spell_mules.py,
+capture the output on the top.
+
+You can use update_spell_prices.py to see what adjustments
+to pricing might be made.
 Update the spell_prices-YYYY-MM-DD.py accordingly
 
 Eventual work would be comining the info in the
@@ -35,7 +40,7 @@ import class_spells
 import parse_spell_mules
 
 
-price_file = "spell_prices-2021-12-29.py"
+price_file = "spell_prices-2022-04-21.py"
 
 class Spell:
     def __init__(self, name, external, internal):
@@ -77,7 +82,7 @@ def main():
     spell_dict = parse_spell_mules.create_spell_dict()
     spell_count = parse_spell_mules.spell_count(spell_dict)
     spell_list = []
-    with open("pricing_work" + os.sep + price_file) as spell_prices:
+    with open("price_data" + os.sep + price_file) as spell_prices:
         for spell in spell_prices:
             name = spell.split(",")[0]
             external = spell.split(",")[1]

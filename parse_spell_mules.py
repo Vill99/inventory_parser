@@ -10,21 +10,22 @@ import sys
 import class_spells
 import mule_list
 
-garbage = ["Short Sword*",
-           "A Worn Candle",
-           "Skin of Milk",
-           "Bread Cakes*",
-           "Empty",
-           "Name",
-           "Song: Chant of Battle*",
-           "A tattered note",
-           "Tome of Order and Discord",
-           "Club*",
-           "Backpack",
-           "Large Sewing Kit",
-           "Colorfully Patched Tunic*",
-           "Elemental Grimoire"
-           ]
+garbage = [
+    "Short Sword*",
+    "A Worn Candle",
+    "Skin of Milk",
+    "Bread Cakes*",
+    "Empty",
+    "Name",
+    "Song: Chant of Battle*",
+    "A tattered note",
+    "Tome of Order and Discord",
+    "Club*",
+    "Backpack",
+    "Large Sewing Kit",
+    "Colorfully Patched Tunic*",
+    "Elemental Grimoire"
+]
 
 
 inventory_path = ".." + os.sep + "equi" + os.sep
