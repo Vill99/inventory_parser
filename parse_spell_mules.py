@@ -47,6 +47,10 @@ def main():
     spell_counts = spell_count(spell_dict)
     for spell in spell_counts:
         print(spell)
+    print_class_lists(spell_dict, min_number_to_sell, max_number_to_sell)
+    
+
+def print_class_lists(spell_dict, min_number_to_sell, max_number_to_sell):
     for class_name in class_spells.classes:
         print("")
         print("**{} Spells**".format(class_name.capitalize()))
@@ -56,7 +60,6 @@ def main():
                     if spell_dict[spell] <= max_number_to_sell:
                         print_spell(spell)
         print("")
-
     for spell in spell_dict:
         found = False
         for class_name in class_spells.classes:

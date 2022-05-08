@@ -14,17 +14,17 @@ def get_args():
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "--prices", "-p",
-        default="spell_prices-2022-04-21.py",
+        default="spell_prices-2022-05-08.py",
         help="The spell prices file from last month"
     )
     parser.add_argument(
         "--counts", "-c",
-        default="spell_counts-2022-04-21.py",
+        default="spell_counts-2022-05-08.py",
         help="The spell counts file, current"
     )
     parser.add_argument(
         "--unixgeek", "-u",
-        default="unixgeekPrices2022-04-21.csv",
+        default="unixgeekPrices2022-05-08.csv",
         help="The unixgeek spell prices file"
     )
     args = parser.parse_args()
@@ -104,7 +104,7 @@ class UpdateSpells():
 
 
     def undercut(self):
-        print("\nBeing updercut on the following spells:\n")
+        print("\nBeing undercut on the following spells:\n")
         for spell in self.spell_dict.values():
             try:
                 if float(spell.external) > float(spell.geekprice):
