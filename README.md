@@ -12,7 +12,7 @@ spell_counts-YYYY-MM-DD.py
 spell_prices-YYYY-MM-DD.py
 
 
-Instructions for doing so, are a little week, but found in the actual script
+Instructions for doing so, are a little weak, but found in the actual script
 
 ### update_spell_prices.py
 You will need to update the script itself with the latest versions of spell data.
