@@ -6,8 +6,11 @@ This is the main script that outputs the auction script.
 You will need to create the following 3 files and put them in price_data:
 
 unixgeekSpellPricesYYYY-MM-DD.csv
+
 spell_counts-YYYY-MM-DD.py
+
 spell_prices-YYYY-MM-DD.py
+
 
 Instructions for doing so, are a little week, but found in the actual script
 
