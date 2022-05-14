@@ -12,6 +12,7 @@ specify a list on the command line.
 """
 
 import argparse
+import os
 
 from intrange.intrange import IntRange
 from spellbooks.P99Spells import p99spells
@@ -89,14 +90,34 @@ def find_missing(spell_book, args, character_class):
                             found = True
                     if not found:
                         print(p99spell["Name"])
-    # print(args)
+
+
+def get_spellbooks(args):
+    spell_book_list = []
+    file_list = os.listdir(".")
+    for filename in file_list:
+        if filename.endswith("-Spellbook.txt"):
+            args.name = filename[:filename.find('-')]
+            print("*" * 80)
+            print(args.name)
+            print("")
+            check_spellbook(args)
+
+
+def check_spellbook(args):
+    spell_book = SpellBook(args)
+    character_class = determine_class(spell_book)
+    find_missing(spell_book, args, character_class)
+
 
 def main():
     """Main entry point."""
     args = get_args()
-    spell_book = SpellBook(args)
-    character_class = determine_class(spell_book)
-    find_missing(spell_book, args, character_class)
+    if args.name:
+        check_spellbook(args)
+    else:
+        spell_book_list = get_spellbooks(args)
+
 
 
 if __name__ == "__main__":
