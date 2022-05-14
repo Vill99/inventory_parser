@@ -1972,7 +1972,7 @@ p99spells = [
   {
     "Class": "Cleric",
     "Level": 50,
-    "Name": "Improved Invis to Undead",
+    "Name": "Improved Invis vs Undead",
     "Description": "Self-only invisibility to undead (fixed duration)",
     "Era": "Velious",
     "Type": "Abj.",
@@ -2112,7 +2112,7 @@ p99spells = [
   {
     "Class": "Cleric",
     "Level": 54,
-    "Name": "Unswerving Hammer",
+    "Name": "Unswerving Hammer of Faith",
     "Description": "Summons an animated hammer. Unswerving Hammer of Faith once scribed.",
     "Era": "Kunark",
     "Type": "Con.",
