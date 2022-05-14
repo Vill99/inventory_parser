@@ -33,7 +33,7 @@ This script will print out a list of all the spells in the inventories and their
 them by class and print out each classes spells.
 
 ### spell_checker.py
-Still a work in progress. Goal is to check a character's spellbook and list the missing spells.
+This script will check a character's spellbook and list the missing spells.
 
 
 
