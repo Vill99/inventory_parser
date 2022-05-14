@@ -82,7 +82,7 @@
 "Form of the Howler",None, None
 "Form of the Hunter",None, None
 "Fortitude",100, 50
-"Frost",None, None
+"Frost",1500, 800
 "Gangrenous Touch of Zum'uul",None, None
 "Gift of Brilliance",1450, 500
 "Gift of Insight",250, 100

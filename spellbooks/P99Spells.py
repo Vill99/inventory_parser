@@ -1,4 +1,4 @@
-spells = [
+p99spells = [
   {
     "Class": "Bard",
     "Level": 1,
@@ -6794,7 +6794,7 @@ spells = [
     "Level": 8,
     "Name": "Staff of Tracing",
     "Description": "Summons 1 Summoned: Staff of Tracing",
-    "Era": "?",
+    "Era": "Classic",
     "Type": "Con.",
     "Obtained": "Vendor",
     "Mana": 20
@@ -9414,7 +9414,7 @@ spells = [
     "Level": 44,
     "Name": "Incinerate Bones",
     "Description": "Deals 494 to 500 damage to the target. (Chardok revamp drop)",
-    "Era": "C2.0",
+    "Era": "Chardok 2.0",
     "Type": "Evo.",
     "Obtained": "NPC Drop.",
     "Mana": 210
@@ -9484,7 +9484,7 @@ spells = [
     "Level": 49,
     "Name": "Dead Men Floating",
     "Description": "Applies Dead Man Floating to the caster's entire group.",
-    "Era": "C2.0",
+    "Era": "Chardok 2.0",
     "Type": "Abj.",
     "Obtained": "NPC Drop.",
     "Mana": 375

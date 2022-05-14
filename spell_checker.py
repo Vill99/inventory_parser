@@ -14,10 +14,21 @@ specify a list on the command line.
 import argparse
 
 from intrange.intrange import IntRange
-from spellbooks.P99Spells import spells
+from spellbooks.P99Spells import p99spells
+from spellbooks.spellbook import SpellBook
 
 
-
+ERA_LIST = [
+    "Classic",
+    "Fear",
+    "Sky",
+    "Paineel",
+    "Kunark",
+    "Hole",
+    "Velious",
+    "Warrens",
+    "Chardok 2.0"
+]
 
 
 def get_args():
@@ -42,18 +53,47 @@ def get_args():
         "--era",
         "-e",
         default="Chardok 2.0",
-        choices=["Classic", "Kunark", "Velious", "Chardok 2.0"],
+        choices=ERA_LIST,
         help="Latest era to look for spells."
     )
     args = parser.parse_args()
     return args
 
 
+def determine_class(spell_book):
+    """Given a spell_book, determine the class of the owner."""
+    for spell in spell_book.spell_list:
+        found = 0
+        for p99spell in p99spells:
+            if spell.name == p99spell["Name"]:
+                found += 1
+                # print(spell.name)
+                # print(p99spell["Class"])
+                character_class = p99spell["Class"]
+        if found == 1:
+            return character_class
+    print("Unable to determine class.")
+    quit(3)
+
+
+def find_missing(spell_book, args, character_class):
+    """Find all the missing spells."""
+    for p99spell in p99spells:
+        if p99spell["Class"] == character_class:
+            found = False
+            for spell in spell_book.spell_list:
+                if spell.name == p99spell["Name"]:
+                    found = True
+            if not found:
+                print(p99spell["Name"])
+    # print(args)
+
 def main():
     """Main entry point."""
     args = get_args()
-    #SpellChecker(args)
-    print(args)
+    spell_book = SpellBook(args)
+    character_class = determine_class(spell_book)
+    find_missing(spell_book, args, character_class)
 
 
 if __name__ == "__main__":
