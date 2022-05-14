@@ -3464,7 +3464,7 @@ p99spells = [
     "Level": 34,
     "Name": "Ring of Great Divide",
     "Description": "Self Only Gate to Great Divide on Velious",
-    "Era": "Chardok 2.0",
+    "Era": "Surefall Glade",
     "Type": "Alt.",
     "Obtained": "Kelethin",
     "Mana": 150
@@ -3574,7 +3574,7 @@ p99spells = [
     "Level": 39,
     "Name": "Ring of Cobalt Scar",
     "Description": "Self Only Gate to Cobalt Scar on Velious",
-    "Era": "Chardok 2.0",
+    "Era": "Surefall Glade",
     "Type": "Alt.",
     "Obtained": "Kelethin",
     "Mana": 150
@@ -3584,7 +3584,7 @@ p99spells = [
     "Level": 39,
     "Name": "Ring of Wakening Lands",
     "Description": "Self Only to Wakening Lands on Velious",
-    "Era": "Chardok 2.0",
+    "Era": "Surefall Glade",
     "Type": "Alt.",
     "Obtained": "Kelethin",
     "Mana": 150
@@ -14634,7 +14634,7 @@ p99spells = [
     "Level": 34,
     "Name": "Great Divide Gate",
     "Description": "Self Only Gate to Great Divide",
-    "Era": "Chardok 2.0",
+    "Era": "Surefall Glade",
     "Type": "Alt.",
     "Obtained": "Vendor.",
     "Mana": 150
@@ -14764,7 +14764,7 @@ p99spells = [
     "Level": 39,
     "Name": "Cobalt Scar Gate",
     "Description": "Self Only Gate to Cobalt Scar",
-    "Era": "Chardok 2.0",
+    "Era": "Surefall Glade",
     "Type": "Alt.",
     "Obtained": "Vendor.",
     "Mana": 150
@@ -14934,7 +14934,7 @@ p99spells = [
     "Level": 39,
     "Name": "Wakening Lands Gate",
     "Description": "Self Only Gate to The Wakening Land",
-    "Era": "Chardok 2.0",
+    "Era": "Surefall Glade",
     "Type": "Alt.",
     "Obtained": "Vendor.",
     "Mana": 150
@@ -15194,7 +15194,7 @@ p99spells = [
     "Level": 49,
     "Name": "Translocate: Cobalt Scar",
     "Description": "Single Target Teleport to Cobalt Scar",
-    "Era": "Chardok 2.0",
+    "Era": "Surefall Glade",
     "Type": "Alt.",
     "Obtained": "Sol. Ro.",
     "Mana": 225
@@ -15204,7 +15204,7 @@ p99spells = [
     "Level": 49,
     "Name": "Translocate: Great Divide",
     "Description": "Single Target Teleport to Great Divide",
-    "Era": "Chardok 2.0",
+    "Era": "Surefall Glade",
     "Type": "Alt.",
     "Obtained": "Sol. Ro.",
     "Mana": 225
@@ -15214,7 +15214,7 @@ p99spells = [
     "Level": 49,
     "Name": "Translocate: Iceclad",
     "Description": "Single Target Teleport to Iceclad Ocean",
-    "Era": "Chardok 2.0",
+    "Era": "Surefall Glade",
     "Type": "Alt.",
     "Obtained": "Sol. Ro.",
     "Mana": 225
@@ -15224,7 +15224,7 @@ p99spells = [
     "Level": 49,
     "Name": "Translocate: Wakening Lands",
     "Description": "Single Target Teleport to The Wakening Land",
-    "Era": "Chardok 2.0",
+    "Era": "Surefall Glade",
     "Type": "Alt.",
     "Obtained": "Sol. Ro.",
     "Mana": 225
@@ -15402,7 +15402,7 @@ p99spells = [
   {
     "Class": "Wizard",
     "Level": 54,
-    "Name": "Voltaic Draught",
+    "Name": "Voltaic Draugh",
     "Description": "Direct Damage Magic Spell. 688 DMG 229.3 DPS 3.2 DPM",
     "Era": "Kunark",
     "Type": "Evo.",

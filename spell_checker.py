@@ -27,7 +27,8 @@ ERA_LIST = [
     "Hole",
     "Velious",
     "Warrens",
-    "Chardok 2.0"
+    "Chardok 2.0",
+    "Surefall Glade"
 ]
 
 
@@ -52,7 +53,7 @@ def get_args():
     parser.add_argument(
         "--era",
         "-e",
-        default="Chardok 2.0",
+        default="Surefall Glade",
         choices=ERA_LIST,
         help="Latest era to look for spells."
     )
@@ -80,12 +81,14 @@ def find_missing(spell_book, args, character_class):
     """Find all the missing spells."""
     for p99spell in p99spells:
         if p99spell["Class"] == character_class:
-            found = False
-            for spell in spell_book.spell_list:
-                if spell.name == p99spell["Name"]:
-                    found = True
-            if not found:
-                print(p99spell["Name"])
+            if p99spell["Level"] <= args.level:
+                if ERA_LIST.index(p99spell["Era"]) <= ERA_LIST.index(args.era):
+                    found = False
+                    for spell in spell_book.spell_list:
+                        if spell.name == p99spell["Name"]:
+                            found = True
+                    if not found:
+                        print(p99spell["Name"])
     # print(args)
 
 def main():
