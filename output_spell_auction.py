@@ -17,6 +17,10 @@ Save that file in price_data, named accordingly.
 Create the spell_counts file using parse_spell_mules.py,
 capture the output on the top.
 
+At this point, update this script with the new spell_prices file.
+
+Update the update_spell_prices.py with all 3 files.
+
 You can use update_spell_prices.py to see what adjustments
 to pricing might be made.
 Update the spell_prices-YYYY-MM-DD.py accordingly
@@ -40,7 +44,7 @@ import class_spells
 import parse_spell_mules
 
 
-price_file = "spell_prices-2022-04-21.py"
+price_file = "spell_prices-2022-05-18.py"
 
 class Spell:
     def __init__(self, name, external, internal):
