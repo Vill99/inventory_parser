@@ -7692,7 +7692,7 @@ p99spells = [
   {
     "Class": "Magician",
     "Level": 44,
-    "Name": "Malaisement",
+    "Name": "Malisement",
     "Description": "Single Target Fire Resist (FR) Cold Resist (CR) Magic Resist (MR) and Poison Resist (PR) Debuff (Max: 40)",
     "Era": "Classic",
     "Type": "Alt.",
