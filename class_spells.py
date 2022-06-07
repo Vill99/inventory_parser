@@ -222,6 +222,7 @@ classes = {
         "Ice Comet",
         "Great Divide Portal",
         "Cobalt Scar Portal",
+        "Wakening Lands Portal",
     ],
     'shaman': [
         "Ultravision",
