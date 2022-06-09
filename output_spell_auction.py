@@ -14,8 +14,8 @@ Do a file -> Download -> .csv
 
 Save that file in price_data, named accordingly.
 
-Create the spell_counts file using parse_spell_mules.py,
-capture the output on the top.
+Create the spell_counts file using parse_spell_mules.py --count,
+capture the output.
 
 At this point, update this script with the new spell_prices file.
 
