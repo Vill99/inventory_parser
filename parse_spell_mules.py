@@ -3,6 +3,7 @@ all the spells and the counts. Then it will output a slightly
 nicely formatted list of spells to place in a WTS post in discord.
 """
 
+import argparse
 import os
 import re
 import sys
@@ -42,22 +43,52 @@ class Inventory:
 
 
 def main():
-    min_number_to_sell, max_number_to_sell = get_sell_ranges()
+    args = get_args()
     spell_dict = create_spell_dict()
     spell_counts = spell_count(spell_dict)
     for spell in spell_counts:
         print(spell)
-    print_class_lists(spell_dict, min_number_to_sell, max_number_to_sell)
-    
+    print_class_lists(spell_dict, args)
 
-def print_class_lists(spell_dict, min_number_to_sell, max_number_to_sell):
+
+def get_args():
+    """Get arguments from the command line."""
+    parser = argparse.ArgumentParser(
+        description='Search spellbook files for missing spells.'
+    )
+    parser.add_argument(
+        "--count",
+        "-c",
+        action='store_true',
+        help="""Only show the spell counts"""
+    )
+    parser.add_argument(
+        "--min",
+        "-m",
+        default=3,
+        type=int,
+        help="""Minimum number needed, to sell."""
+    )
+    parser.add_argument(
+        "--max",
+        default=100,
+        type=int,
+        help="""Maximum number allowed, to sell."""
+    )
+    args = parser.parse_args()
+    return args
+
+
+def print_class_lists(spell_dict, args):
+    if args.count:
+        return
     for class_name in class_spells.classes:
         print("")
         print("**{} Spells**".format(class_name.capitalize()))
         for spell in spell_dict:
             if spell in class_spells.classes[class_name]:
-                if spell_dict[spell] >= min_number_to_sell:
-                    if spell_dict[spell] <= max_number_to_sell:
+                if spell_dict[spell] >= args.min:
+                    if spell_dict[spell] <= args.max:
                         print_spell(spell)
         print("")
     for spell in spell_dict:
@@ -67,18 +98,6 @@ def print_class_lists(spell_dict, min_number_to_sell, max_number_to_sell):
                 found = True
         if not found:
             print("Did not find {}".format(spell))
-
-
-def get_sell_ranges():
-    try:
-        min_number_to_sell = int(sys.argv[1])
-    except:
-        min_number_to_sell = 3
-    try:
-        max_number_to_sell = int(sys.argv[2])
-    except:
-        max_number_to_sell = 99
-    return min_number_to_sell, max_number_to_sell
 
 
 def create_spell_dict():
