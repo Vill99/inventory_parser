@@ -71,7 +71,7 @@ class UpdateSpells():
         self.work = "price_data" + os.sep
         self.spell_dict = {}
 
-
+        print("\n"*5)
         self.load_prices()
         self.load_counts()
         self.load_unixgeek()
@@ -79,6 +79,7 @@ class UpdateSpells():
         self.undercut()
         self.needs_pricing()
         self.too_low()
+        print("\n"*5)
 
 
     def too_low(self):
@@ -104,11 +105,20 @@ class UpdateSpells():
 
 
     def undercut(self):
+        print("\nBeing undercut on the following spells, but none in stock:\n")
+        for spell in self.spell_dict.values():
+            try:
+                if float(spell.external) > float(spell.geekprice):
+                    if spell.count is None:
+                        print(spell)
+            except:
+                pass
         print("\nBeing undercut on the following spells:\n")
         for spell in self.spell_dict.values():
             try:
                 if float(spell.external) > float(spell.geekprice):
-                    print(spell)
+                    if spell.count is not None:
+                        print(spell)
             except:
                 pass
 
