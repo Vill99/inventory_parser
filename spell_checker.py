@@ -89,7 +89,7 @@ def find_missing(spell_book, args, character_class):
                         if spell.name == p99spell["Name"]:
                             found = True
                     if not found:
-                        print(p99spell["Name"])
+                        print(p99spell["Name"] + " - " + str(p99spell["Level"]))
 
 
 def get_spellbooks(args):

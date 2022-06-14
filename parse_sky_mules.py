@@ -1,4 +1,3 @@
-# parse inventory
 import os
 import re
 import sys
@@ -35,7 +34,6 @@ class Inventory:
         for item in self.inventory:
             output += ",{}".format(item)
         return output
-        #return "{}\n{}".format(self.name, self.inventory)
 
 
 def set_inventory():
