@@ -7,6 +7,7 @@ class SpellBook():
             print("This is not yet implemented, please specify a name.")
             quit()
 
+
     def read_spellbook(self, name):
         self.name = name
         try:
@@ -16,6 +17,17 @@ class SpellBook():
         except IOError:
             print(name + "-Spellbook.txt was not found.")
             quit(2)
+        self.read_ignorelist()
+
+
+    def read_ignorelist(self):
+        try:
+            with open(self.name + "-Ignore.txt") as spellbook:
+                for line in spellbook:
+                    self.read_spell_line(line)
+        except IOError:
+            pass
+
 
     def read_spell_line(self, line):
         split_line = line.split()

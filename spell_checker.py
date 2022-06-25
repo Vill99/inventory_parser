@@ -3,11 +3,13 @@
 Open a spellbook text file.
 Determine the class based on the spells contained. If not enough spells to
 determine the class, just output an error.
-Up to the max level spell in the book, show all the missing spells.
-A Max level to check for can be specified as a parameter.
+A Max level can be specified as a parameter.
 
-For a batch, do the same routine against either all Spellbook text files, or
-specify a list on the command line.
+Parameters are Name, Level and Era.
+
+If no Name is specified, it will query all spellbooks in the directory.
+If no level is specified, it will assume level 60.
+If no era is specified, it will assume the latest.
 
 """
 
