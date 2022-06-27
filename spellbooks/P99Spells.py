@@ -11232,7 +11232,7 @@ p99spells = [
   {
     "Class": "Ranger",
     "Level": 54,
-    "Name": "Skin Like Diamond",
+    "Name": "Skin like Diamond",
     "Description": "AC and Max HP Buff with Healing Spell",
     "Era": "Kunark",
     "Type": "Abj.",
