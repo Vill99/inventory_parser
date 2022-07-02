@@ -22,7 +22,7 @@ p99spells = [
   {
     "Class": "Bard",
     "Level": 3,
-    "Name": "Jaxan's Jig o' Vigor",
+    "Name": "Jaxan`s Jig o` Vigor",
     "Description": "Party: Increase Endurance Regeneration",
     "Era": "Classic",
     "Type": "Percussion",
@@ -32,7 +32,7 @@ p99spells = [
   {
     "Class": "Bard",
     "Level": 4,
-    "Name": "Lyssa's Locating Lyric",
+    "Name": "Lyssa`s Locating Lyric",
     "Description": "Self: Corpse Location Song",
     "Era": "Classic",
     "Type": "Singing",
@@ -42,7 +42,7 @@ p99spells = [
   {
     "Class": "Bard",
     "Level": 5,
-    "Name": "Selo's Accelerando",
+    "Name": "Selo`s Accelerando",
     "Description": "Party: Increase Movement Speed",
     "Era": "Classic",
     "Type": "Percussion",
@@ -72,7 +72,7 @@ p99spells = [
   {
     "Class": "Bard",
     "Level": 8,
-    "Name": "Kelin's Lugubrious Lament",
+    "Name": "Kelin`s Lugubrious Lament",
     "Description": "Target: Lull",
     "Era": "Classic",
     "Type": "String",
@@ -92,7 +92,7 @@ p99spells = [
   {
     "Class": "Bard",
     "Level": 10,
-    "Name": "Anthem De Arms",
+    "Name": "Anthem de Arms",
     "Description": "Party: Increase STR Attack Speed",
     "Era": "Classic",
     "Type": "Singing",
@@ -102,7 +102,7 @@ p99spells = [
   {
     "Class": "Bard",
     "Level": 11,
-    "Name": "Cinda's Charismatic Carillon",
+    "Name": "Cinda`s Charismatic Carillon",
     "Description": "Target: Improve Faction",
     "Era": "Classic",
     "Type": "Wind",
@@ -112,7 +112,7 @@ p99spells = [
   {
     "Class": "Bard",
     "Level": 12,
-    "Name": "Brusco's Boastful Bellow",
+    "Name": "Brusco`s Boastful Bellow",
     "Description": "Target: DD and Interrupt Casting",
     "Era": "Classic",
     "Type": "Singing",
@@ -132,7 +132,7 @@ p99spells = [
   {
     "Class": "Bard",
     "Level": 14,
-    "Name": "Lyssa's Cataloging Libretto",
+    "Name": "Lyssa`s Cataloging Libretto",
     "Description": "Target: Identify",
     "Era": "Classic",
     "Type": "Singing",
@@ -142,7 +142,7 @@ p99spells = [
   {
     "Class": "Bard",
     "Level": 15,
-    "Name": "Kelin's Lucid Lullaby",
+    "Name": "Kelin`s Lucid Lullaby",
     "Description": "PBAoE: Mesmerise",
     "Era": "Classic",
     "Type": "String",
@@ -152,7 +152,7 @@ p99spells = [
   {
     "Class": "Bard",
     "Level": 16,
-    "Name": "Tarew's Aquatic Ayre",
+    "Name": "Tarew`s Aquatic Ayre",
     "Description": "Party: Enduring Breath",
     "Era": "Classic",
     "Type": "Wind",
@@ -172,7 +172,7 @@ p99spells = [
   {
     "Class": "Bard",
     "Level": 18,
-    "Name": "Denon's Disruptive Discord",
+    "Name": "Denon`s Disruptive Discord",
     "Description": "PBAoE: DoT Decrease AC",
     "Era": "Classic",
     "Type": "Brass",
@@ -182,7 +182,7 @@ p99spells = [
   {
     "Class": "Bard",
     "Level": 19,
-    "Name": "Shauri's Sonorous Clouding",
+    "Name": "Shauri`s Sonorous Clouding",
     "Description": "Party: Invisibility See Invisible",
     "Era": "Classic",
     "Type": "Wind (Required)",
@@ -192,7 +192,7 @@ p99spells = [
   {
     "Class": "Bard",
     "Level": 20,
-    "Name": "Largo's Melodic Binding",
+    "Name": "Largo`s Melodic Binding",
     "Description": "PBAoE: Decrease AC Attack Speed",
     "Era": "Classic",
     "Type": "Singing",
@@ -202,7 +202,7 @@ p99spells = [
   {
     "Class": "Bard",
     "Level": 20,
-    "Name": "Cassindra's Chant of Clarity",
+    "Name": "Cassindra`s Chant of Clarity",
     "Description": "Party: Increase Mana Regeneration",
     "Era": "Velious",
     "Type": "Singing",
@@ -212,7 +212,7 @@ p99spells = [
   {
     "Class": "Bard",
     "Level": 21,
-    "Name": "Melanie's Mellifluous Motion",
+    "Name": "Melanie`s Mellifluous Motion",
     "Description": "Party: Short Range Teleport",
     "Era": "Classic",
     "Type": "Wind",
@@ -222,7 +222,7 @@ p99spells = [
   {
     "Class": "Bard",
     "Level": 22,
-    "Name": "Alenia's Disenchanting Melody",
+    "Name": "Alenia`s Disenchanting Melody",
     "Description": "Party: Remove Buffs",
     "Era": "Classic",
     "Type": "String (Required)",
@@ -232,7 +232,7 @@ p99spells = [
   {
     "Class": "Bard",
     "Level": 23,
-    "Name": "Selo's Consonant Chain",
+    "Name": "Selo`s Consonant Chain",
     "Description": "Target: Decrease Movement Speed Attack Speed",
     "Era": "Classic",
     "Type": "Singing",
@@ -242,7 +242,7 @@ p99spells = [
   {
     "Class": "Bard",
     "Level": 24,
-    "Name": "Lyssa's Veracious Concord",
+    "Name": "Lyssa`s Veracious Concord",
     "Description": "Party: See Invisibility Ultravision",
     "Era": "Classic",
     "Type": "Wind",
@@ -262,7 +262,7 @@ p99spells = [
   {
     "Class": "Bard",
     "Level": 26,
-    "Name": "Angstlich's Appalling Screech",
+    "Name": "Angstlich`s Appalling Screech",
     "Description": "PBAoE: Fear",
     "Era": "Classic",
     "Type": "Brass",
@@ -272,7 +272,7 @@ p99spells = [
   {
     "Class": "Bard",
     "Level": 27,
-    "Name": "Solon's Song of the Sirens",
+    "Name": "Solon`s Song of the Sirens",
     "Description": "Target: Charm NPC Decrease MR",
     "Era": "Classic",
     "Type": "Wind",
@@ -282,7 +282,7 @@ p99spells = [
   {
     "Class": "Bard",
     "Level": 28,
-    "Name": "Crission's Pixie Strike",
+    "Name": "Crission`s Pixie Strike",
     "Description": "Target: Mesmerise Decrease MR",
     "Era": "Classic",
     "Type": "Wind",
@@ -302,7 +302,7 @@ p99spells = [
   {
     "Class": "Bard",
     "Level": 30,
-    "Name": "Fufil's Curtailing Chant",
+    "Name": "Fufil`s Curtailing Chant",
     "Description": "Target: DoT Decrease MR",
     "Era": "Classic",
     "Type": "Percussion",
@@ -312,7 +312,7 @@ p99spells = [
   {
     "Class": "Bard",
     "Level": 31,
-    "Name": "Agilmente's Aria of Eagles",
+    "Name": "Agilmente`s Aria of Eagles",
     "Description": "Party: Levitation",
     "Era": "Classic",
     "Type": "Wind (Required)",
@@ -322,7 +322,7 @@ p99spells = [
   {
     "Class": "Bard",
     "Level": 32,
-    "Name": "Cassindra's Chorus of Clarity",
+    "Name": "Cassindra`s Chorus of Clarity",
     "Description": "Party: Increase Mana Restoration",
     "Era": "Classic",
     "Type": "Singing",
@@ -352,7 +352,7 @@ p99spells = [
   {
     "Class": "Bard",
     "Level": 34,
-    "Name": "Lyssa's Solidarity of Vision",
+    "Name": "Lyssa`s Solidarity of Vision",
     "Description": "Target: Bind Sight",
     "Era": "Classic",
     "Type": "Wind",
@@ -362,7 +362,7 @@ p99spells = [
   {
     "Class": "Bard",
     "Level": 35,
-    "Name": "Denon's Dissension",
+    "Name": "Denon`s Dissension",
     "Description": "PBAoE: Decrease Mana",
     "Era": "Classic",
     "Type": "Brass",
@@ -372,7 +372,7 @@ p99spells = [
   {
     "Class": "Bard",
     "Level": 36,
-    "Name": "Vilia's Verses of Celerity",
+    "Name": "Vilia`s Verses of Celerity",
     "Description": "Party: Increase AC AGI Attack Speed",
     "Era": "Classic",
     "Type": "Singing",
@@ -392,7 +392,7 @@ p99spells = [
   {
     "Class": "Bard",
     "Level": 38,
-    "Name": "Tuyen's Chant of Flame",
+    "Name": "Tuyen`s Chant of Flame",
     "Description": "Target: DoT Decrease FR",
     "Era": "Classic",
     "Type": "Percussion",
@@ -402,7 +402,7 @@ p99spells = [
   {
     "Class": "Bard",
     "Level": 39,
-    "Name": "Solon's Bewitching Bravura",
+    "Name": "Solon`s Bewitching Bravura",
     "Description": "Target: Charm Decrease MR",
     "Era": "Kunark",
     "Type": "Wind",
@@ -412,7 +412,7 @@ p99spells = [
   {
     "Class": "Bard",
     "Level": 40,
-    "Name": "Syvelian's Anti-Magic Aria",
+    "Name": "Syvelian`s Anti-Magic Aria",
     "Description": "Target: Remove Buffs",
     "Era": "Classic",
     "Type": "Singing",
@@ -432,7 +432,7 @@ p99spells = [
   {
     "Class": "Bard",
     "Level": 42,
-    "Name": "McVaxius' Berserker Crescendo",
+    "Name": "McVaxius` Berserker Crescendo",
     "Description": "Party: Increase STR AC Attack Speed",
     "Era": "Classic",
     "Type": "Brass",
@@ -442,7 +442,7 @@ p99spells = [
   {
     "Class": "Bard",
     "Level": 43,
-    "Name": "Denon's Desperate Dirge",
+    "Name": "Denon`s Desperate Dirge",
     "Description": "Target: AoE DD",
     "Era": "Classic",
     "Type": "Singing",
@@ -452,7 +452,7 @@ p99spells = [
   {
     "Class": "Bard",
     "Level": 44,
-    "Name": "Cassindra's Elegy",
+    "Name": "Cassindra`s Elegy",
     "Description": "Party: Increase WIS INT",
     "Era": "Classic",
     "Type": "Singing",
@@ -472,7 +472,7 @@ p99spells = [
   {
     "Class": "Bard",
     "Level": 46,
-    "Name": "Tuyen's Chant of Frost",
+    "Name": "Tuyen`s Chant of Frost",
     "Description": "Target: DoT Decrease CR",
     "Era": "Classic",
     "Type": "Percussion",
@@ -482,7 +482,7 @@ p99spells = [
   {
     "Class": "Bard",
     "Level": 47,
-    "Name": "Niv's Melody of Preservation",
+    "Name": "Niv`s Melody of Preservation",
     "Description": "Party: Increase STR HP Regeneration Absorb Magic Damage",
     "Era": "Classic",
     "Type": "String",
@@ -492,7 +492,7 @@ p99spells = [
   {
     "Class": "Bard",
     "Level": 48,
-    "Name": "Selo's Chords of Cessation",
+    "Name": "Selo`s Chords of Cessation",
     "Description": "PBAoE: DoT Decrease Attack Speed",
     "Era": "Classic",
     "Type": "String",
@@ -532,7 +532,7 @@ p99spells = [
   {
     "Class": "Bard",
     "Level": 51,
-    "Name": "Selo's Song of Travel",
+    "Name": "Selo`s Song of Travel",
     "Description": "Party: Increase Movement Speed Invisibility See Invisible Levitate",
     "Era": "Kunark",
     "Type": "Percussion",
@@ -542,7 +542,7 @@ p99spells = [
   {
     "Class": "Bard",
     "Level": 51,
-    "Name": "Largo's Absonant Binding",
+    "Name": "Largo`s Absonant Binding",
     "Description": "Target: Decrease AGI AC Attack Speed Movement Speed",
     "Era": "Kunark",
     "Type": "Singing",
@@ -552,7 +552,7 @@ p99spells = [
   {
     "Class": "Bard",
     "Level": 52,
-    "Name": "Nillipus' March of the Wee",
+    "Name": "Nillipus` March of the Wee",
     "Description": "Party: Increase AGI AC Absorb Damage Shrink",
     "Era": "Kunark",
     "Type": "Percussion",
@@ -582,7 +582,7 @@ p99spells = [
   {
     "Class": "Bard",
     "Level": 54,
-    "Name": "Vilia's Chorus of Celerity",
+    "Name": "Vilia`s Chorus of Celerity",
     "Description": "Party: Increase Attack Speed",
     "Era": "Kunark",
     "Type": "Singing",
@@ -592,7 +592,7 @@ p99spells = [
   {
     "Class": "Bard",
     "Level": 54,
-    "Name": "Selo's Assonant Strane",
+    "Name": "Selo`s Assonant Strane",
     "Description": "PBAoE: Decrease Movement Speed Attack Speed",
     "Era": "Kunark",
     "Type": "String",
@@ -652,7 +652,7 @@ p99spells = [
   {
     "Class": "Bard",
     "Level": 57,
-    "Name": "McVaxius' Rousing Rondo",
+    "Name": "McVaxius` Rousing Rondo",
     "Description": "Party: Increase STR ATK Attack Speed Damage Shield",
     "Era": "Kunark",
     "Type": "Brass",
@@ -662,7 +662,7 @@ p99spells = [
   {
     "Class": "Bard",
     "Level": 57,
-    "Name": "Cassindra's Insipid Ditty",
+    "Name": "Cassindra`s Insipid Ditty",
     "Description": "Target: Decrease Mana INT WIS",
     "Era": "Kunark",
     "Type": "String",
@@ -672,7 +672,7 @@ p99spells = [
   {
     "Class": "Bard",
     "Level": 58,
-    "Name": "Niv's Harmonic",
+    "Name": "Niv`s Harmonic",
     "Description": "Party: Increase AC",
     "Era": "Kunark",
     "Type": "Singing",
@@ -682,7 +682,7 @@ p99spells = [
   {
     "Class": "Bard",
     "Level": 58,
-    "Name": "Jonthan's Inspiration",
+    "Name": "Jonthan`s Inspiration",
     "Description": "Self: Increase STR ATK Attack Speed",
     "Era": "Kunark",
     "Type": "Singing",
@@ -692,7 +692,7 @@ p99spells = [
   {
     "Class": "Bard",
     "Level": 59,
-    "Name": "Denon's Bereavement",
+    "Name": "Denon`s Bereavement",
     "Description": "PBAoE: Dot Poison Stun Decrease MR",
     "Era": "Kunark",
     "Type": "String",
@@ -702,7 +702,7 @@ p99spells = [
   {
     "Class": "Bard",
     "Level": 59,
-    "Name": "Solon's Charismatic Concord",
+    "Name": "Solon`s Charismatic Concord",
     "Description": "Party: Increase CHA",
     "Era": "Kunark",
     "Type": "Singing",
@@ -712,7 +712,7 @@ p99spells = [
   {
     "Class": "Bard",
     "Level": 60,
-    "Name": "Kazumi's Note of Preservation",
+    "Name": "Kazumi`s Note of Preservation",
     "Description": "Party: Invulnerability",
     "Era": "Kunark",
     "Type": "Wind",
@@ -722,7 +722,7 @@ p99spells = [
   {
     "Class": "Bard",
     "Level": 60,
-    "Name": "Angstlich's Assonance",
+    "Name": "Angstlich`s Assonance",
     "Description": "Target: DoT Decrease Attack Speed",
     "Era": "Kunark",
     "Type": "Brass",
