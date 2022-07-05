@@ -13682,7 +13682,7 @@ p99spells = [
   {
     "Class": "Shaman",
     "Level": 57,
-    "Name": "Maniacal Strength",
+    "Name": "Manicial Strength",
     "Description": "Strength Buff (Max: 68)",
     "Era": "Kunark",
     "Type": "Alt.",
