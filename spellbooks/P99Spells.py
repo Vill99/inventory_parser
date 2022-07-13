@@ -7912,7 +7912,7 @@ p99spells = [
   {
     "Class": "Magician",
     "Level": 52,
-    "Name": "Vocarate: Fire (Earth)",
+    "Name": "Vocarate: Fire",
     "Description": "Summons a Fire Elemental Pet (Wizard class)",
     "Era": "Kunark",
     "Type": "Con.",
