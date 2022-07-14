@@ -44,7 +44,7 @@ import class_spells
 import parse_spell_mules
 
 
-price_file = "spell_prices-2022-05-18.py"
+price_file = "spell_prices-2022-07-14.py"
 
 class Spell:
     def __init__(self, name, external, internal):
