@@ -3,7 +3,7 @@
 "Aegis of Ro",40, 30
 "Aegis",150, 50
 "Aegolism",300, 100
-"Arch Lich",800, 100
+"Arch Lich",200, 100
 "Asphyxiate",300, 100
 "Atol's Spectral Shackles",None, None
 "Augment",None, None
