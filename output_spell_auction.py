@@ -1,7 +1,8 @@
 """
 Update the price_file to the latest version.
+Just duplicate the previous one and use today's date.
 
-Create the unixgeekSpellPricesYYYY-MM-DD.csv
+Create the unixgeekPricesYYYY-MM-DD.csv
 as follows:
 go to:
 https://unixgeek.com/last-week-P1999Green.html
@@ -44,7 +45,7 @@ import class_spells
 import parse_spell_mules
 
 
-price_file = "spell_prices-2022-07-14.py"
+price_file = "spell_prices-2022-08-31.py"
 
 class Spell:
     def __init__(self, name, external, internal):
