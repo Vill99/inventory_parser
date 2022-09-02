@@ -14,17 +14,17 @@ def get_args():
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "--prices", "-p",
-        default="spell_prices-2022-07-14.py",
+        default="spell_prices-2022-08-31.py",
         help="The spell prices file from last month"
     )
     parser.add_argument(
         "--counts", "-c",
-        default="spell_counts-2022-07-14.py",
+        default="spell_counts-2022-08-31.py",
         help="The spell counts file, current"
     )
     parser.add_argument(
         "--unixgeek", "-u",
-        default="unixgeekPrices2022-07-14.csv",
+        default="unixgeekPrices2022-08-31.csv",
         help="The unixgeek spell prices file"
     )
     args = parser.parse_args()
