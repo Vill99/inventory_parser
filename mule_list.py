@@ -13,7 +13,14 @@ skymules = [
     'Sealdumpe', 'Sealdumpf', 'Sealdumpg', 'Sealdumph',
     'Skyweapons', 'sealsofta', 'sealsoftb', 'sealsoftc',
     'sealsoftd', 'sealsofte', 'sealsoftf', 'sealsoftg',
-    'sealsofth'
+    'Doxyann', 'Doxyiiii', 'Bankasaurus', 'Blskeyebot',
+    'Doxybee', 'Doxyjay', 'Blairbank', 'Blskeyedrop',
+    'Doxycee', 'Doxykay', 'Blskeye', 'Blskeyedump',
+    'Doxydee', 'Doxylle', 'Blskeytwo', 'Blskeyemule',
+    'Doxyeee', 'Doxymme', 'Blski', 'Blskiaaa',
+    'Doxyfee', 'Doxynee', 'Blskifree', 'Blskibbb',
+    'Doxygee', 'Doxyooo', 'Fowskyone', 'Blskiccc',
+    'Doxyhee', 'Doxyphe', 'Fowskytwo', 'Blskiddd'
 ]
 spellmules = [
     'Allspells',
