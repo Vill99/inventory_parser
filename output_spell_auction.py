@@ -1,7 +1,4 @@
 """
-Update the price_file to the latest version.
-Just duplicate the previous one and use today's date.
-
 Create the unixgeekPricesYYYY-MM-DD.csv
 as follows:
 go to:
@@ -18,10 +15,6 @@ Save that file in price_data, named accordingly.
 Create the spell_counts file using parse_spell_mules.py --count,
 capture the output.
 
-At this point, update this script with the new spell_prices file.
-
-Update the update_spell_prices.py with all 3 files.
-
 You can use update_spell_prices.py to see what adjustments
 to pricing might be made.
 Update the spell_prices-YYYY-MM-DD.py accordingly
@@ -37,15 +30,15 @@ output that info.
 output the unixgeek info.
 
 """
-
+from datetime import datetime
 import os
 import sys
 
 import class_spells
 import parse_spell_mules
 
-
-price_file = "spell_prices-2022-08-31.py"
+today = datetime.today().strftime('%Y-%m-%d')
+price_file = "spell_prices-{}.py".format(today)
 
 class Spell:
     def __init__(self, name, external, internal):
@@ -104,6 +97,7 @@ def main():
                     print_spell(spell, internal, min_price)
                 else:
                     print_spell(spell, external, min_price)
+
         print("")
 
 

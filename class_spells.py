@@ -101,6 +101,7 @@ classes = {
         "Gift of Brilliance",
         "Visions of Grandeur",
         "Wind of Tishanian",
+        "Feedback",
     ],
     'magician': [
         "Summon Shard of the Core",
@@ -225,6 +226,7 @@ classes = {
         "Great Divide Portal",
         "Cobalt Scar Portal",
         "Wakening Lands Portal",
+        "Energy Storm",
     ],
     'shaman': [
         "Ultravision",
@@ -269,6 +271,7 @@ classes = {
         "Melody of Ervaj",
         "Occlusion of Sound",
         "Composition of Ervaj",
+        "Chords of Dissonance",
     ],
     'ranger': [
         "Call of Earth",

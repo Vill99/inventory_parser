@@ -44,6 +44,9 @@ spellmules = [
     'Magebox',
     'Scrollbox',
     'Spellbox',
-    'Wizbox'
+    'Wizbox',
+    'Myspell',
+    'Boxs',
+    'Mile'
 
 ]

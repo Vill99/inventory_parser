@@ -602,7 +602,7 @@ p99spells = [
   {
     "Class": "Bard",
     "Level": 55,
-    "Name": "Cantata of Replenishment",
+    "Name": "Cantana of Replenishment",
     "Description": "Party: HP Regeneration Mana Regeneration Endurance Regeneration",
     "Era": "Kunark",
     "Type": "String",
@@ -612,7 +612,7 @@ p99spells = [
   {
     "Class": "Bard",
     "Level": 55,
-    "Name": "Brusco's Bombastic Bellow",
+    "Name": "Brusco`s Bombastic Bellow",
     "Description": "Target: DD Stun",
     "Era": "Kunark",
     "Type": "Singing",

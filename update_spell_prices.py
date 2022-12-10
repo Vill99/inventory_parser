@@ -1,10 +1,12 @@
 # Give info on updating spell prices.
 
 import argparse
+from datetime import datetime
 import os
 import re
 import sys
 
+today = datetime.today().strftime('%Y-%m-%d')
 
 def get_args():
     """Get arguments from the command line.
@@ -14,17 +16,17 @@ def get_args():
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "--prices", "-p",
-        default="spell_prices-2022-08-31.py",
+        default="spell_prices-{}.py".format(today),
         help="The spell prices file from last month"
     )
     parser.add_argument(
         "--counts", "-c",
-        default="spell_counts-2022-08-31.py",
+        default="spell_counts-{}.py".format(today),
         help="The spell counts file, current"
     )
     parser.add_argument(
         "--unixgeek", "-u",
-        default="unixgeekPrices2022-08-31.csv",
+        default="unixgeekPrices{}.csv".format(today),
         help="The unixgeek spell prices file"
     )
     args = parser.parse_args()
