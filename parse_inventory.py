@@ -8,8 +8,6 @@ Inventory file.
 import re
 import sys
 
-import mule_list
-
 garbage = [
     "Short Sword*",
     "A Worn Candle",
