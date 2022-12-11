@@ -29,8 +29,9 @@ garbage = [
 ]
 
 
-#inventory_path = ".." + os.sep + "equi" + os.sep
-inventory_path = ".." + os.sep + ".." + os.sep + "Bitbucket" + os.sep + "equi" + os.sep
+inventory_path = ".." + os.sep + "equi" + os.sep
+#inventory_path = ".." + os.sep + ".." + os.sep + "Bitbucket" + os.sep + "equi" + os.sep
+#inventory_path = "." + os.sep
 
 class Inventory:
     def __init__(self, name):
