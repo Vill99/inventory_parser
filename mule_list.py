@@ -48,6 +48,7 @@ spellmules = [
     'Myspell',
     'Boxs',
     'Mile',
-    'Krui'
+    'Krui',
+    'Bagbak'
 
 ]
