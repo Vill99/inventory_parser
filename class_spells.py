@@ -1,14 +1,14 @@
 """
 This is intended more for use as the list of spells to sell from the bank.
 
-Missing from this list are all the research spells.
-
 This isn't a comprehensive list of all class spells.
 """
 
 classes = {
 
     'cleric': [
+        "Turning of the Unnatural",
+        "Bulwark of Faith",
         "Improved Invis to Undead",
         'Word of Souls',
         "Death Pact",
@@ -72,6 +72,20 @@ classes = {
         "Fixation of Ro",
     ],
     'enchanter': [
+        "Color Shift",
+        "Color Skew",
+        "Mana Sieve",
+        "Paralyzing Earth",
+        "Mind Wipe",
+        "Pillage Enchantment",
+        "Radiant Visage",
+        "Reoccurring Amnesia",
+        "Shiftless Deeds",
+        "Strip Enchantment",
+        "Tepid Deeds",
+        "Allure",
+        "Berserker Strength",
+        "Blanket of Forgetfulness",
         "Ultravision",
         "Wandering Mind",
         "Boon of the Garou",
@@ -104,6 +118,8 @@ classes = {
         "Feedback",
     ],
     'magician': [
+        "Greater Conjuration: Air",
+        "Greater Conjuration: Water",
         "Summon Shard of the Core",
         "Elemental Maelstrom",
         "Monster Summoning II",
@@ -139,6 +155,11 @@ classes = {
         "Burnout IV",
     ],
     'necromancer': [
+        "Insipid Weakness",
+        "Invoke Death",
+        "Lich",
+        "Cackling Bones",
+        "Bond of Death",
         'Harmshield',
         'Word of Souls',
         "Malignant Dead",
@@ -178,6 +199,9 @@ classes = {
         "Improved Invis vs Undead",
     ],
     'wizard': [
+        "Pillar of Fire,",
+        "Project Lightning",
+        "Circle of Force",
         "Invisibility to Undead",
         "Gravity Flux",
         "Supernova",
@@ -271,6 +295,7 @@ classes = {
         "Melody of Ervaj",
         "Occlusion of Sound",
         "Composition of Ervaj",
+        "Chords of Dissonance",
         "Chords of Dissonance",
     ],
     'ranger': [

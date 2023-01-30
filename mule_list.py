@@ -23,6 +23,7 @@ skymules = [
     'Doxyhee', 'Doxyphe', 'Fowskytwo', 'Blskiddd'
 ]
 spellmules = [
+    #sealteamspells
     'Allspells',
     'Chanterspells',
     'Clerspells',
@@ -31,6 +32,7 @@ spellmules = [
     'Necromspells',
     'Shmnspells',
     'Wizrdspells',
+    #sealspells99
     'Clerikospells',
     'Drooidospells',
     'Enchantospells',
@@ -39,16 +41,26 @@ spellmules = [
     'Shamospells',
     'Spellsdump',
     'Wizzospells',
+    #sealspells
     'Drubox',
     'Hybridbox',
     'Magebox',
     'Scrollbox',
     'Spellbox',
     'Wizbox',
+    #gboeq
     'Myspell',
+    #jgritty
     'Boxs',
-    'Mile',
     'Krui',
-    'Bagbak'
-
+    #anana10
+    'Mile',
+    #micah5g
+    'Bagbak',
+    #anana7
+    'Mages',
+    'Pagess',
+    'Roons',
+    'Spellzz',
+    'Wordss'
 ]
