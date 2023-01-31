@@ -72,6 +72,7 @@ classes = {
         "Fixation of Ro",
     ],
     'enchanter': [
+        "Mesmerization",
         "Color Shift",
         "Color Skew",
         "Mana Sieve",
@@ -118,6 +119,7 @@ classes = {
         "Feedback",
     ],
     'magician': [
+        "Everfount",
         "Greater Conjuration: Air",
         "Greater Conjuration: Water",
         "Summon Shard of the Core",
@@ -155,6 +157,8 @@ classes = {
         "Burnout IV",
     ],
     'necromancer': [
+        "Vampiric Curse",
+        "Renew Bones",
         "Insipid Weakness",
         "Invoke Death",
         "Lich",
@@ -199,7 +203,11 @@ classes = {
         "Improved Invis vs Undead",
     ],
     'wizard': [
-        "Pillar of Fire,",
+        "Thunderclap",
+        "Cast Force",
+        "Column of Fire",
+        "Column of Lightning",
+        "Pillar of Fire",
         "Project Lightning",
         "Circle of Force",
         "Invisibility to Undead",

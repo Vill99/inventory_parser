@@ -18,6 +18,7 @@
 "Berserker Strength", 25, 20
 "Blanket of Forgetfulness", 180, 150
 "Blast of Poison",50, 30
+"Blaze", 20, 20
 "Blizzard",30, 15
 "Bond of Death", 650, 400
 "Bonds of Tunare",200, 200
@@ -37,6 +38,7 @@
 "Call of the Predator",30, 25
 "Cannibalize III",90, 75
 "Cannibalize IV",2000, 1000
+"Cast Force", 40, 25
 "Chill Bones",200, 100
 "Chilling Embrace",None, None
 "Chords of Dissonance", 5, 5
@@ -51,6 +53,8 @@
 "Color Shift", 20, 15
 "Color Skew", 100, 50
 "Color Slant",None, None
+"Column of Fire", 10, 10
+"Column of Lightning", 25, 25
 "Composition of Ervaj",50, 20
 "Conglaciation of Bone",None, None
 "Conjure Corpse",150, 120
@@ -81,6 +85,7 @@
 "Enticement of Flame",40, 20
 "Entrapping Roots",100, 20
 "Evacuate",150, 50
+"Everfount", 60, 50
 "Exile Undead",80, 15
 "Eye of Tallon",100, 80
 "Feedback",180, 100
@@ -142,6 +147,7 @@
 "Markar`s Discord",50, 20
 "Mask of the Hunter",None, None
 "Melody of Ervaj",40, 25
+"Mesmerization", 30, 30
 "Mind Wipe", 150, 120
 "Minion of Shadows",None, None
 "Monster Summoning II",None, None
@@ -169,6 +175,7 @@
 "Recant Magic",180, 150
 "Reckoning",40, 25
 "Regrowth of the Grove",None, None
+"Renew Bones", 80, 50
 "Reoccurring Amnesia", 60, 50
 "Repulse Animal",20, 20
 "Retribution of Al`Kabor",150, 50
@@ -198,7 +205,7 @@
 "Summon: Muzzle of Mardu",8000, 7000
 "Sunskin",None, None
 "Sunstrike",None, None
-"Supernova",None, None
+"Supernova",300, 200
 "Talisman of Jasinth",75, 30
 "Talisman of Shadoo",None, None
 "Talisman of the Brute",80, 50
@@ -214,6 +221,7 @@
 "Theft of Thought",250, 100
 "Thrall of Bones",90, 50
 "Thunderbold",40, 30
+"Thunderclap", 80, 50
 "Tigir`s Insects",250, 100
 "Tishan's Discord",None, None
 "Torment of Argli",None, None
@@ -230,6 +238,7 @@
 "Umbra",None, None
 "Unswerving Hammer",None, None
 "Upheaval",45, 30
+"Vampiric Curse", 40, 40
 "Velocity",30, 20
 "Vengeance of Al`Kabor",250, 50
 "Visions of Grandeur",10000, 5000

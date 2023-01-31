@@ -62,5 +62,11 @@ spellmules = [
     'Pagess',
     'Roons',
     'Spellzz',
-    'Wordss'
+    'Wordss',
+    #sealteam99
+    'Betweenthelines',
+    'Chanterpages',
+    'Necrowords',
+    'Researchmagi',
+    'Wizrunes',
 ]
