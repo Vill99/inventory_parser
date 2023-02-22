@@ -50,10 +50,12 @@ spellmules = [
     'Wizbox',
     #gboeq
     'Myspell',
+    'Kubine',
     #jgritty
     'Boxs',
     'Krui',
     #anana10
+    'Bananastan',
     'Mile',
     #micah5g
     'Bagbak',
