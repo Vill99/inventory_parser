@@ -34,6 +34,7 @@ classes = {
         "Word of Redemption",
         "Exile Undead",
         "Improved Invis vs Undead",
+        "Celestial Healing",
     ],
     'druid': [
         "Repulse Animal",
@@ -155,6 +156,9 @@ classes = {
         "Mala",
         "Monster Summoning III",
         "Burnout IV",
+        "Greater Summoning: Earth",
+        "Blaze",
+        "Flame Arc",
     ],
     'necromancer': [
         "Vampiric Curse",
@@ -201,6 +205,9 @@ classes = {
         "Summon Corpse",
         "Exile Undead",
         "Improved Invis vs Undead",
+        "Haunting Corpse",
+        "Call of Bones",
+        "Invoke Shadow",
     ],
     'wizard': [
         "Thunderclap",
@@ -259,6 +266,8 @@ classes = {
         "Cobalt Scar Portal",
         "Wakening Lands Portal",
         "Energy Storm",
+        "Force Spiral of Al'Kabor",
+        "Wrath of Ap'Sagor",
     ],
     'shaman': [
         "Ultravision",

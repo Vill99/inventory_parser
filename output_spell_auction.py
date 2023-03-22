@@ -1,5 +1,14 @@
 """
+Step 1.
 Create the unixgeekPricesYYYY-MM-DD.csv
+You will need to pip install:
+beautifulsoup4
+requests
+
+cd into the scraper directory
+python get_price_data.py
+
+You could do this step manually:
 as follows:
 go to:
 https://unixgeek.com/last-week-P1999Green.html
@@ -12,13 +21,23 @@ Do a file -> Download -> .csv
 
 Save that file in price_data, named accordingly.
 
-Create the spell_counts file using parse_spell_mules.py --count,
-capture the output.
+Step 2.
+Create the spell_counts file using python parse_spell_mules.py -o -c
 
+Step 3.
+You can duplicate the most recent spell_prices file with today's date.
+
+Step 4.
 You can use update_spell_prices.py to see what adjustments
 to pricing might be made.
 Update the spell_prices-YYYY-MM-DD.py accordingly
 
+Step 5.
+Run this script
+python output_spell_auction.py external
+And copy paste the output to discord auction channels
+
+Future:
 Eventual work would be comining the info in the
 spell_counts file and the unixgeek pricing to create
 spell prices on the fly. Also use previous spell prices.
@@ -80,12 +99,17 @@ def main():
     spell_dict = parse_spell_mules.create_spell_dict()
     spell_count = parse_spell_mules.spell_count(spell_dict)
     spell_list = []
-    with open("price_data" + os.sep + price_file) as spell_prices:
-        for spell in spell_prices:
-            name = spell.split(",")[0]
-            external = spell.split(",")[1]
-            internal = spell.split(",")[2].strip()
-            spell_list.append(Spell(name, external, internal))
+    try:
+        with open("price_data" + os.sep + price_file) as spell_prices:
+            for spell in spell_prices:
+                name = spell.split(",")[0]
+                external = spell.split(",")[1]
+                internal = spell.split(",")[2].strip()
+                spell_list.append(Spell(name, external, internal))
+    except FileNotFoundError as e:
+        print(e)
+        print("ERROR: Did you create new pricing files for today?")
+        quit(1)
 
     for class_name in class_spells.classes:
         print("")

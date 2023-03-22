@@ -59,6 +59,8 @@ spellmules = [
     'Mile',
     #micah5g
     'Bagbak',
+    #micah6g
+    'Badany',
     #anana7
     'Mages',
     'Pagess',
@@ -71,4 +73,6 @@ spellmules = [
     'Necrowords',
     'Researchmagi',
     'Wizrunes',
+    #anana
+    'Ananana',
 ]
