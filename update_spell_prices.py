@@ -25,9 +25,9 @@ def get_args():
         help="The spell counts file, current"
     )
     parser.add_argument(
-        "--unixgeek", "-u",
-        default="unixgeekPrices{}.csv".format(today),
-        help="The unixgeek spell prices file"
+        "--pigparse", "-i",
+        default="pigparsePrices{}.csv".format(today),
+        help="The pigparse spell prices file"
     )
     args = parser.parse_args()
     return args
@@ -40,14 +40,14 @@ class Spell():
             external=None,
             internal=None,
             count=None,
-            geekprice=None,
-            geekcount=None):
+            pigprice=None,
+            pigcount=None):
         self.name = name
         self.internal = internal
         self.external = external
         self.count = count
-        self.geekprice = geekprice
-        self.geekcount = geekcount
+        self.pigprice = pigprice
+        self.pigcount = pigcount
 
     def __str__(self):
         output = ""
@@ -58,10 +58,10 @@ class Spell():
             output += ", internal=" + str(self.internal)
         if self.count:
             output += ", count=" + str(self.count)
-        if self.geekprice:
-            output += ", geekprice=" + str(self.geekprice)
-        if self.geekcount:
-            output += ", geekcount=" + str(self.geekcount)
+        if self.pigprice:
+            output += ", pigprice=" + str(self.pigprice)
+        if self.pigcount:
+            output += ", pigcount=" + str(self.pigcount)
         return output
 
 
@@ -76,7 +76,7 @@ class UpdateSpells():
         print("\n"*5)
         self.load_prices()
         self.load_counts()
-        self.load_unixgeek()
+        self.load_pigparse()
         self.out_of_stock()
         self.undercut()
         self.needs_pricing()
@@ -88,7 +88,7 @@ class UpdateSpells():
         print("\nThe following spells may be priced too low:\n")
         for spell in self.spell_dict.values():
             try:
-                if int(spell.external) < float(spell.geekprice) / 2:
+                if int(spell.external) < float(spell.pigprice) / 2:
                     if int(spell.count) < 10:
                         print(spell)
             except:
@@ -110,7 +110,7 @@ class UpdateSpells():
         print("\nBeing undercut on the following spells, but none in stock:\n")
         for spell in self.spell_dict.values():
             try:
-                if float(spell.external) > float(spell.geekprice):
+                if float(spell.external) > float(spell.pigprice):
                     if spell.count is None:
                         print(spell)
             except:
@@ -118,7 +118,7 @@ class UpdateSpells():
         print("\nBeing undercut on the following spells:\n")
         for spell in self.spell_dict.values():
             try:
-                if float(spell.external) > float(spell.geekprice):
+                if float(spell.external) > float(spell.pigprice):
                     if spell.count is not None:
                         print(spell)
             except:
@@ -180,32 +180,30 @@ class UpdateSpells():
                         self.spell_dict[spell_name] = Spell(spell_name, external, internal, count)
 
 
-    def load_unixgeek(self):
-        # print(self.args.unixgeek)
-        with open(self.work + self.args.unixgeek) as unixgeek:
-            for line in unixgeek:
+    def load_pigparse(self):
+        with open(self.work + self.args.pigparse) as pigparse:
+            for line in pigparse:
                 try:
                     spell_name = line.split(',')[1].split("Spell: ")[1]
                 except:
                     spell_name = None
                 try:
-                    geekprice = line.split(',')[3].strip()
+                    pigprice = line.split(',')[3].strip()
                 except:
-                    geekprice = None
+                    pigprice = None
                 try:
-                    geekcount = line.split(',')[2].strip()
+                    pigcount = line.split(',')[2].strip()
                 except:
-                    geekcount = None
+                    pigcount = None
                 #print(spell_name)
                 if spell_name:
                     if spell_name not in self.spell_dict:
-                        #print("Warning: " + spell_name + " found in unixgeek, but not before.")
-                        self.spell_dict[spell_name] = Spell(spell_name, geekprice=geekprice, geekcount=geekcount)
+                        self.spell_dict[spell_name] = Spell(spell_name, pigprice=pigprice, pigcount=pigcount)
                     else:
                         external = self.spell_dict[spell_name].external
                         internal = self.spell_dict[spell_name].internal
                         count = self.spell_dict[spell_name].count
-                        self.spell_dict[spell_name] = Spell(spell_name, external, internal, count, geekprice, geekcount)
+                        self.spell_dict[spell_name] = Spell(spell_name, external, internal, count, pigprice, pigcount)
 
 
 

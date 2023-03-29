@@ -175,7 +175,7 @@
 "Primal Avatar",None, None
 "Project Lightning", 5, 5
 "Protection of the Glades",500, 100
-"Quiver of Marr",None, None
+"Quiver of Marr",50, 50
 "Quivering Veil of Xarn",70, 70
 "Radiant Visage", 80, 50
 "Rage of Zomm",125, 20
@@ -226,7 +226,7 @@
 "Tepid Deeds", 75, 50
 "The Unspoken Word",200, 100
 "Theft of Thought",175, 100
-"Thrall of Bones",90, 50
+"Thrall of Bones",100, 50
 "Thunderbold",40, 30
 "Thunderclap", 80, 50
 "Tigir`s Insects",250, 100
@@ -250,7 +250,7 @@
 "Vengeance of Al`Kabor",250, 50
 "Visions of Grandeur",10000, 5000
 "Vocarate: Air",None, None
-"Vocarate: Fire",70, 50
+"Vocarate: Fire",50, 50
 "Vocarate: Water",45, 20
 "Voice of the Berserker",150, 50
 "Wake of Karana",None, None

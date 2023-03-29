@@ -1,25 +1,23 @@
 """
 Step 1.
-Create the unixgeekPricesYYYY-MM-DD.csv
+Create the pigparsePricesYYYY-MM-DD.csv
 You will need to pip install:
-beautifulsoup4
 requests
 
 cd into the scraper directory
-python get_price_data.py
+python get_pigparse_data.py
 
 You could do this step manually:
 as follows:
 go to:
-https://unixgeek.com/last-week-P1999Green.html
+https://pigparse.azurewebsites.net/ServerIndex/Green
 
-Highlight all the columns that have "Spell:" at the
-start, copy and paste those 4 columns into a new
-google sheet
-
-Do a file -> Download -> .csv
-
-Save that file in price_data, named accordingly.
+Filter by "Spell:"
+You'll have to manually create a csv from the 4 columns:
+    Last Seen (Just the date, don't need the time)
+    Item
+    30d Count
+    30d Avg
 
 Step 2.
 Create the spell_counts file using python parse_spell_mules.py -o -c
@@ -38,15 +36,20 @@ python output_spell_auction.py external
 And copy paste the output to discord auction channels
 
 Future:
-Eventual work would be comining the info in the
-spell_counts file and the unixgeek pricing to create
+Eventual work would be combining the info in the
+spell_counts file and the pigparse pricing to create
 spell prices on the fly. Also use previous spell prices.
+Basically, make update_spell_prices.py more proactive.
 
-1. If we have no copies, set the prices to None
-2. If our prices are higher than the unixgeek, just
-output that info.
+1. If we have no copies, just leave the price unadjusted
+since it's irrelevant, we output the ones that are being undercut
+2. If our prices are higher than the pigparse, reduce the
+price if we have more than 1 copy. 
 3. If we have copies, but the prices are set to None
-output the unixgeek info.
+update the price to the pigparse price.
+4. If we are pricing too low compared to pigparse, raise the price
+unless we have more than 5 copies.
+5. Log any price update.
 
 """
 from datetime import datetime
