@@ -70,9 +70,19 @@ spellmules = [
     #sealteam99
     'Betweenthelines',
     'Chanterpages',
+    'Leeroyy',
     'Necrowords',
     'Researchmagi',
     'Wizrunes',
     #anana
     'Ananana',
+    #blbankacct1
+    'Blencspells',
+    'Blmagespells',
+    'Blenchanter',
+    'Blmagician',
+    'Blnecromancer',
+    'Blnecrospells',
+    'Blwizard',
+    'Blwizspells',
 ]
