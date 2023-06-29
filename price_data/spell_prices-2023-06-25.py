@@ -127,8 +127,6 @@
 "Hsagra's Wrath",None, None
 "Ice Comet",500, 500
 "Ice Spear of Solist",90, 40
-"Improved Invis to Undead",150, 150
-"Improved Invis vs Undead",None, None
 "Improved Invisibility",80, 80
 "Improved Superior Camouflage",None, None
 "Incinerate Bones",None, None

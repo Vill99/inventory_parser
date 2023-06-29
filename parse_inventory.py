@@ -3,6 +3,7 @@
 This script just reads a single inventory for a toon, and
 outputs a list of items. It looks in the current directory for the
 Inventory file.
+
 """
 
 import re
