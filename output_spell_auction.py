@@ -1,4 +1,7 @@
 """
+Step 0.
+Open your inventory_parser virtual environment
+
 Step 1.
 Create the pigparsePricesYYYY-MM-DD.csv
 You will need to pip install:
@@ -20,6 +23,7 @@ You'll have to manually create a csv from the 4 columns:
     30d Avg
 
 Step 2.
+Change directory back to the root of the inventory_parser directory.
 Create the spell_counts file using python parse_spell_mules.py -o -c
 
 Step 3.
@@ -28,7 +32,7 @@ You can duplicate the most recent spell_prices file with today's date.
 Step 4.
 You can use update_spell_prices.py to see what adjustments
 to pricing might be made.
-Update the spell_prices-YYYY-MM-DD.py accordingly
+Update today's spell_prices-YYYY-MM-DD.py accordingly
 
 Step 5.
 Run this script

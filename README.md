@@ -5,7 +5,7 @@ Simple scripts for parsing Everquest inventory files
 This is the main script that outputs the auction script.
 You will need to create the following 3 files and put them in price_data:
 
-unixgeekSpellPricesYYYY-MM-DD.csv
+pigparsePricesYYYY-MM-DD.csv
 
 spell_counts-YYYY-MM-DD.py
 
@@ -15,7 +15,7 @@ spell_prices-YYYY-MM-DD.py
 Instructions for doing so, are a little weak, but found in the actual script
 
 ### update_spell_prices.py
-You will need to update the script itself with the latest versions of spell data.
+This will look for today's spell prices, counts and pigparse data.
 It will give you hints as to mispriced auctions
 
 ### parse_inventory.py 
@@ -31,9 +31,3 @@ items. It should be run once the sheet stops reflecting the inventories accurate
 ### parse_spell_mules.py
 This script will print out a list of all the spells in the inventories and their counts. Then it will sort
 them by class and print out each classes spells.
-
-### spell_checker.py
-This script will check a character's spellbook and list the missing spells.
-
-
-
