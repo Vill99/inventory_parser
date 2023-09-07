@@ -125,7 +125,7 @@
 "Greater Summoning: Earth",150,100
 "Greater Vocaration: Air",100, 20
 "Greater Vocaration: Fire",200, 100
-"Greater Vocaration: Water",1000, 200
+"Greater Vocaration: Water",600, 200
 "Harmshield",40, 15
 "Haunting Corpse",100,100
 "Heroic Bond",20, 15
@@ -171,7 +171,7 @@
 "Occlusion of Sound",2000, 500
 "Paralyzing Earth", 25, 20
 "Pillage Enchantment", 50, 40
-"Pillar of Fire", 300, 250
+"Pillar of Fire", 15, 15
 "Pillar of Flame",150, 150
 "Pillar of Frost",45, 25
 "Pillar of Lightning",40, 20
