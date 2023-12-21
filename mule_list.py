@@ -85,4 +85,6 @@ spellmules = [
     'Blnecrospells',
     'Blwizard',
     'Blwizspells',
+    #sealbank
+    'Researchwiz',
 ]
