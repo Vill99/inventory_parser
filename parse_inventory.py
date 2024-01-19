@@ -58,5 +58,20 @@ def get_inventory(mule_name):
     return item_list
 
 
+def get_counts(mule_name):
+    file_name = mule_name + "-Inventory.txt"
+    item_counts = []
+    try:
+        with open(file_name) as inventory:
+            for line in inventory:
+                split_line = re.split(r'\t+', line.rstrip('\t'))
+                if split_line[1] not in garbage:
+                    item_counts.append([split_line[1], split_line[3]])
+    except:
+        print(mule_name + " not found.")
+        pass
+    return item_counts
+
+
 if __name__ == '__main__':
     main()
