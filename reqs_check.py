@@ -117,6 +117,10 @@ weight_bags = [
     "Lionhide Backpack",
     "Box of Nil Space",
     'Deluxe Toolbox',
+    'Hand Made Backpack',
+    'Backpack',
+    'Lexicon',
+    'Large Sewing Kit',
 ]
 keys = [
     'Key to Charasis',

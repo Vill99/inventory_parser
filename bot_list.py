@@ -82,6 +82,7 @@ cleric = [
     'Sneedbox',
     'Durim',
     'Mikebox',
+    'Richardbox',
     # Dain
     'Rumadar',
     'Toastbox',
