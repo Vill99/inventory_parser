@@ -190,6 +190,25 @@ shaman_items_to_check = [
     'Black Fur Boots',
     'Spear of Fate',
 ]
+soulfire_parts = [
+    'Bog Juice',
+    'Edible Goo',
+    "Drom's Champagne",
+    'Bunker Cell #1',
+    'H.K. 102',
+    'A Sealed Note',
+    'A Spider Venom Sac',
+    'Cloth Shirt',
+    'Token of Generosity',
+    'Token of Bravery',
+    'Token of Truth',
+    'Testimony',
+    'Glowing Sword Hilt',
+    'Testimony of Truth',
+    'Brilliant Sword of Faith',
+    'unsealed note',
+    'SoulFire',
+]
 
 
 def get_args():
@@ -243,6 +262,12 @@ def get_args():
         "-t",
         action='store_true',
         help="""Print out thurg gear items."""
+    )
+    parser.add_argument(
+        "--soulfire",
+        "-s",
+        action='store_true',
+        help="""Print out items for soulfire quest."""
     )
     args = parser.parse_args()
     if args.c is None:
@@ -317,6 +342,10 @@ def check_requirements(args):
     if args.flowers:
         print("FLOWERS".center(45, ' '))
         for item in flowers:
+            check_item(args, item, counts)
+    if args.soulfire:
+        print("SOULFIRE".center(45, ' '))
+        for item in soulfire_parts:
             check_item(args, item, counts)
     if args.c.lower() == "cleric":
         print("CLERIC".center(45, ' '))

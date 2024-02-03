@@ -120,7 +120,8 @@ class UpdateSpells():
             try:
                 if float(spell.external) > float(spell.pigprice):
                     if spell.count is not None:
-                        print(spell)
+                        if spell.pigparse != 0:
+                            print(spell)
             except:
                 pass
 
