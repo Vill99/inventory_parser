@@ -88,3 +88,9 @@ spellmules = [
     #sealbank
     'Researchwiz',
 ]
+research_mules = [
+    'Researchenc',
+    'Researchmag',
+    'Researchnec',
+    'Researchwiz',
+]

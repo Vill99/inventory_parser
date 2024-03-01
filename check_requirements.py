@@ -381,7 +381,6 @@ def check_requirements(args):
             count_item(item, counts)
 
 
-
 def main():
     args = get_args()
     if args.name:
