@@ -112,7 +112,8 @@ class UpdateSpells():
             try:
                 if float(spell.external) > float(spell.pigprice):
                     if spell.count is None:
-                        print(spell)
+                        if int(spell.pigprice) != 0:
+                            print(spell)
             except:
                 pass
         print("\nBeing undercut on the following spells:\n")
@@ -120,7 +121,7 @@ class UpdateSpells():
             try:
                 if float(spell.external) > float(spell.pigprice):
                     if spell.count is not None:
-                        if spell.pigparse != 0:
+                        if int(spell.pigprice) != 0:
                             print(spell)
             except:
                 pass
