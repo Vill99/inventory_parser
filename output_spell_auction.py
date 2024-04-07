@@ -109,10 +109,13 @@ def main():
     try:
         with open("price_data" + os.sep + price_file) as spell_prices:
             for spell in spell_prices:
-                name = spell.split(",")[0]
-                external = spell.split(",")[1]
-                internal = spell.split(",")[2].strip()
-                spell_list.append(Spell(name, external, internal))
+                try:
+                    name = spell.split(",")[0]
+                    external = spell.split(",")[1]
+                    internal = spell.split(",")[2].strip()
+                    spell_list.append(Spell(name, external, internal))
+                except:
+                    pass
     except FileNotFoundError as e:
         print(e)
         print("ERROR: Did you create new pricing files for today?")
