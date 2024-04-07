@@ -81,11 +81,15 @@ cleric = [
     'Goodbot',
     'Sneedbox',
     'Durim',
-    'Mikebox',
     'Richardbox',
     # Dain
     'Rumadar',
     'Toastbox',
+    'Mikebox',
+    'Bradybox',
+    # Vox
+    'Frenchonion',
+    'Chickenoodle',
     # In progress
     'Wilrezu',
     'Peenicillin',
