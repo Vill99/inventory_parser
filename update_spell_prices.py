@@ -173,6 +173,7 @@ class UpdateSpells():
                 except:
                     count = None
                 if spell_name:
+                    spell_name = spell_name.replace("`", "'")
                     if spell_name not in self.spell_dict:
                         print("Warning: " + spell_name + " found in counts, but not in prices.")
                         self.spell_dict[spell_name] = Spell(spell_name, count=count)
