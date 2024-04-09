@@ -85,12 +85,18 @@ def display_resarch(args):
         display_spell_counts(args.c)
     display_low_inventory(args.low_inventory, args.c)
 
+def build_counts():
+    """
+    Need to count up all the research items and spells available on 
+    the bots.
+    """
+
 def main():
     """Main entry point."""
     args = get_args()
     print(args)
+    build_counts()
     display_resarch(args)
-    print(necro_spells)
 
 
 if __name__ == '__main__':
