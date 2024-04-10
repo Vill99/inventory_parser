@@ -68,7 +68,7 @@ def get_args():
     parser.add_argument(
         "--min",
         "-m",
-        default=3,
+        default=1,
         type=int,
         help="""Minimum number needed, to sell."""
     )
@@ -107,7 +107,7 @@ def print_class_lists(spell_dict, args):
         return
     for class_name in class_spells.classes:
         print("")
-        print("**{} Spells**".format(class_name.capitalize()))
+        print("**{} Spells**".format(class_name.title()))
         for spell in spell_dict:
             if spell in class_spells.classes[class_name]:
                 if spell_dict[spell] >= args.min:
