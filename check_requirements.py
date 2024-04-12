@@ -95,6 +95,7 @@ items_to_check = [
     'Shiny Brass Idol',
 ]
 items_to_count = [
+    # intentionally misspelled
     "Veluim Vial",
     'Lizard Blood Potion',
     'Golem Metal Wand',
