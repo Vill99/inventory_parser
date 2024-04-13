@@ -3,7 +3,7 @@ necro_spells = {
     "Hungry Earth": ["Materials", "Spirit"],
     "Voice Graft": ["Possession", "Spoken"],
     "Haunting Corpse": ["Allure", "Detachment", "Possession"],
-    "Intensify Death": ["Absorption", "Recluse", "Sentient (Beza)"],
+    "Intensify Death": ["Absorption", "Recluse", "the Sentient (Beza)"],
     "Summon Dead": ["Haunting", "Possession", "Rupturing"],
     "Renew Bones": ["Acquisition (Azia)", "Incorporeal", "Purification"],
     "Vampiric Curse": ["Parasitism", "Possession"],
@@ -18,3 +18,4 @@ necro_spells = {
     "Lich": ["Ethereal"],
     "Paralyzing Earth": ["Crippling Force"]
 }
+necro_prefixes = ["Words of ", "Words of the "]

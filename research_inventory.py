@@ -8,9 +8,13 @@ How many copies of each spell do we have?
 """
 import argparse
 
-import bot_list
+import mule_list
 from parse_inventory import get_counts
+from parse_spell_mules import create_spell_dict
 from research_items.necro_research import necro_spells
+
+
+inventory_path = ".." + os.sep + "equi" + os.sep
 
 
 def get_args():
@@ -50,6 +54,7 @@ def display_item(item):
     """
     Display the count of a particular item.
     """
+    
     print()
 
 def display_spell(spell):
@@ -90,11 +95,44 @@ def build_counts():
     Need to count up all the research items and spells available on 
     the bots.
     """
+    master_research_list = []
+    research_dict = {}
+    for mule in mule_list.research_mules:
+        research_items = get_items(mule)
+
+def get_items(mule_name):
+    """
+    Get the research items from a particular mule and add them to 
+    the research_list.
+    """
+    file_name = inventory_path + mule_name + "-Inventory.txt"
+    spell_list = []
+    try:
+        with open(file_name) as inventory:
+            for line in inventory:
+                split_line = re.split(r'\t+', line.rstrip('\t'))
+
+                if split_line[1] not in garbage:
+                    if is_spell_or_song(split_line[1]):
+                        try:
+                            spell_name = split_line[1].split("Spell: ")
+                            spell_list.append(spell_name[1])
+                        except:
+                            pass
+                        try:
+                            song_name = split_line[1].split("Song: ")
+                            spell_list.append(song_name[1])
+                        except:
+                            pass
+    except:
+        pass
+    return spell_list
 
 def main():
     """Main entry point."""
     args = get_args()
     print(args)
+    spell_dict = create_spell_dict()
     build_counts()
     display_resarch(args)
 

@@ -16,3 +16,4 @@ wizard_spells = {
     "Supernova": ["Astral", "Impetus"],
     "Wrath of Ap'Sagor": ["Ap'Sagor", "Concussion"],
 }
+wizard_prefixes = ["Rune of ", "Rune of The "]

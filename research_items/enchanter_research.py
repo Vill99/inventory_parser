@@ -17,3 +17,11 @@ enchanter_spells = {
     "Blanket of Forgetfulness": ["415", "416"],
     "Reoccurring Amnesia": ["449, 450"],
 }
+# Can't distinguish left from right without looking at item numbers
+# This doesn't cover faded pages at all
+enchanter_prefixes = [
+    "Nilitim's Grimoire Pg. ", 
+    "Salil's Write Pg. ", 
+    "Part of Tasarin's Grimoire Pg. ", 
+    "Velishoul's Tome Pg. "
+]
