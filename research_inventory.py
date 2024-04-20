@@ -7,6 +7,7 @@ How many copies of a spell do we have and how many could we craft?
 How many copies of each spell do we have?
 """
 import argparse
+import re
 
 import mule_list
 from parse_inventory import get_counts
@@ -99,41 +100,49 @@ def build_counts():
     research_dict = {}
     for mule in mule_list.research_mules:
         research_items = get_items(mule)
+        
+    return research_dict
 
-def get_items(mule_name):
+def is_research(item, research_list):
+    """Returns True if the item is a research item."""
+
+
+    return False
+
+def get_items(mule_name, research_list):
     """
     Get the research items from a particular mule and add them to 
     the research_list.
     """
     file_name = inventory_path + mule_name + "-Inventory.txt"
-    spell_list = []
+    research_list = []
     try:
         with open(file_name) as inventory:
             for line in inventory:
                 split_line = re.split(r'\t+', line.rstrip('\t'))
 
-                if split_line[1] not in garbage:
-                    if is_spell_or_song(split_line[1]):
-                        try:
-                            spell_name = split_line[1].split("Spell: ")
-                            spell_list.append(spell_name[1])
-                        except:
-                            pass
-                        try:
-                            song_name = split_line[1].split("Song: ")
-                            spell_list.append(song_name[1])
-                        except:
-                            pass
+                
+                if is_research(split_line[1], research_list):
+                    try:
+                        spell_name = split_line[1].split("Spell: ")
+                        spell_list.append(spell_name[1])
+                    except:
+                        pass
+                    try:
+                        song_name = split_line[1].split("Song: ")
+                        spell_list.append(song_name[1])
+                    except:
+                        pass
     except:
         pass
-    return spell_list
+    return research_list
 
 def main():
     """Main entry point."""
     args = get_args()
-    print(args)
+    #print(args)
     spell_dict = create_spell_dict()
-    build_counts()
+    research_dict = build_counts()
     display_resarch(args)
 
 

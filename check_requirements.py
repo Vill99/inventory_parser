@@ -158,6 +158,7 @@ cleric_items_to_count = [
     'Mana Battery - Class Four',
     'Stalking Probe',
     'Emerald',
+    'Peridot',
 ]
 cleric_thurg = [
     "Vambraces of Forbidden Rites",
@@ -183,6 +184,7 @@ mage_items_to_count = [
 ]
 wiz_items_to_count = [
     'Small Portal Fragments',
+    'Peridot',
 ]
 necro_items_to_count = [
     'Bone Chips',
