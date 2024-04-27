@@ -7,6 +7,7 @@ How many copies of a spell do we have and how many could we craft?
 How many copies of each spell do we have?
 """
 import argparse
+import os
 import re
 
 import mule_list
@@ -99,7 +100,7 @@ def build_counts():
     master_research_list = []
     research_dict = {}
     for mule in mule_list.research_mules:
-        research_items = get_items(mule)
+        research_items = get_items(mule, master_research_list)
         
     return research_dict
 
