@@ -57,6 +57,8 @@ spellmules = [
     #anana10
     'Bananastan',
     'Mile',
+    #anana11
+    'Gnnoi',
     #micah5g
     'Bagbak',
     #micah6g
@@ -67,6 +69,8 @@ spellmules = [
     'Roons',
     'Spellzz',
     'Wordss',
+    #anana8
+    'Hottbox',
     #sealteam99
     'Betweenthelines',
     'Chanterpages',

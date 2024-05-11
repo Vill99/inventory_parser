@@ -116,11 +116,20 @@ class UpdateSpells():
                             print(spell)
             except:
                 pass
+        print("\nBeing undercut on the following spells, but inventory is 2 or less:\n")
+        for spell in self.spell_dict.values():
+            try:
+                if float(spell.external) > float(spell.pigprice):
+                    if spell.count in ["1", "2"]:
+                        if int(spell.pigprice) != 0:
+                            print(spell)
+            except:
+                pass
         print("\nBeing undercut on the following spells:\n")
         for spell in self.spell_dict.values():
             try:
                 if float(spell.external) > float(spell.pigprice):
-                    if spell.count is not None:
+                    if spell.count is not None and spell.count not in ["1", "2"]:
                         if int(spell.pigprice) != 0:
                             print(spell)
             except:
