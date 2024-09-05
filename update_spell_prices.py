@@ -178,7 +178,7 @@ class UpdateSpells():
                 except:
                     spell_name = None
                 try:
-                    count = line.strip().split(',')[1].strip('\]').strip()
+                    count = line.strip().split(',')[1].strip(']').strip()
                 except:
                     count = None
                 if spell_name:
