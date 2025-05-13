@@ -11,6 +11,7 @@ mage = [
     'Metricbox',
     'Dumpbox',
     'Brotheb',
+    'Sambox',
     'Policoth',
     'Wilma',
     'Wilhelme',
@@ -18,14 +19,17 @@ mage = [
     'Robox',
     'Pombox',
     # Kael
+    # KT
     'Cindybot',
-    'Mushii',
+    'Nerfbox',
+    # Statue
     'Janbot',
+    'Alicebot',
     # VP
     'Lildukee',
     # Skyshrine
     'Mowerphobia',
-    'Smolblok',
+    'Smasherbox',
     # ST
     'Kingtearbox',
     'Marciabot',
@@ -33,15 +37,16 @@ mage = [
     'Lilnugz',
     'Nurfbox',
     'Mehos',
+    'Smolblok',
     # Sebilis
-    'Nerfbox',
     'Wildberry',
+    'Mushii',
+    'Fabbiky',
     # Solb
     'Zordbox',
     # Velk's
     'Myzecoth',
     # In Progress
-    'Smasherbox',
     'Fasen',
     'Hotboxx',
     'Ravelboyz',
@@ -54,7 +59,6 @@ mage = [
     'Nonphungible',
     'Picklecoth',
     'Teryst',
-    'Fabbiky',
 ]
 cleric = [
     'Sealbox', # (rezbot)
@@ -64,22 +68,23 @@ cleric = [
     'Stheala',
     'Sportybox',
     'Solaire',
+    'Matzoball',
     # ToV
     'Adundas',
-    'Babybox',
+    'Sneedbox',
+    'Scarybox',
     'Chbox',
-    'Hanbox',
     'Bobbybox',
     'Lukebox',
-    'Metran ',
+    'Bushybox',
     # Kael
+    'Metran ',
+    'Babybox',
     'Outie',
     'Keynk',
     'Jolimec',
-    'Scarybox',
     'Leiabox',
     'Goodbot',
-    'Sneedbox',
     'Durim',
     'Richardbox',
     # Dain
@@ -87,12 +92,15 @@ cleric = [
     'Toastbox',
     'Mikebox',
     'Bradybox',
+    'Splitpea',
+    # Fear
+    'Wilrezu',
+    'Peenicillin',
+    # VP
+    'Hanbox',
     # Vox
     'Frenchonion',
     'Chickenoodle',
-    # In progress
-    'Wilrezu',
-    'Peenicillin',
 ]
 druid = [
     'Groves', # Non public
@@ -104,15 +112,73 @@ wizard = [
     'Booomboxx',
     'Nukebox',
     'Hexbot',
+    'Hillbox',
     'Siuaen',
     'Nonfiction',
+    'Gazzen',
     'Buen',
+    # In progress
     'Beeetbox',
     'Cadsuaene',
     'Wilportia',
-    'Gazzen',
 ]
 necro = [
     'Hatebox',
     'Nonprophet',
+    # In progress
+    'Fearbox',
+]
+bard = [
+    # Kael
+    'Juisebox',
+    # ST
+    'Jukeboxx',
+    # Fear
+    'Wonderwal',
+    'Manabox',
+    # DN
+    'Circlebox',
+    # FV Leveler
+    'Banbox',
+    # ToV
+    'Paulbox',
+    'Johnbox',
+    'Ringobox',
+    'Georgebox',
+]
+enchanter = [
+    # ST
+    'Tashbox',
+    # Vox
+    'Sievox',
+]
+shaman = [
+    # ST
+    'Hansumbox',
+    # Kael
+    'Movinbox',
+]
+warrior = [
+    # Thurg
+    'Unggh',
+    # In Progress
+    'Tankbox',
+    # ST
+    'Sauceress',
+    'Nirah',
+]
+ranger = [
+    # Fear
+    'Leafblade',
+    # ToV
+    'Dareya',
+]
+rogue = [
+    # Seb
+    'Goodguysebdrag',
+    # VP
+    'Bonniebox',
+    'Clydebox',
+    # ToV
+    'Stuc',
 ]

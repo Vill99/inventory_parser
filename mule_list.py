@@ -80,6 +80,12 @@ spellmules = [
     'Wizrunes',
     #anana
     'Ananana',
+    #anana4
+    'Taeldavdar',
+    #anana20
+    'Tunable',
+    #anana21
+    'Myspells',
     #blbankacct1
     'Blencspells',
     'Blmagespells',
