@@ -1,3 +1,6 @@
+#from collections import defaultdict
+
+
 skymules = [
     'Stdumpa', 'Stdumpb', 'Stdumpc', 'Stdumpd',
     'Stdumpe', 'Stdumpf', 'Stdumpg', 'Stdumph',
@@ -98,7 +101,109 @@ spellmules = [
     'Blwizspells',
     #sealbank
     'Researchwiz',
+    #anana14
+    'Buypells',
 ]
+account_dict = dict(
+    {
+        'sealteamspells': [
+            'Allspells', 
+            'Chanterspells', 
+            'Clerspells', 
+            'Droospells', 
+            'Magspells', 
+            'Necromspells', 
+            'Shmnspells', 
+            'Wizrdspells'
+        ], 
+        'sealspells99': [
+            'Clerikospells', 
+            'Drooidospells', 
+            'Enchantospells', 
+            'Magicospells', 
+            'Necromospells', 
+            'Shamospells', 
+            'Spellsdump', 
+            'Wizzospells'
+        ], 
+        'sealspells': [
+            'Drubox', 
+            'Hybridbox', 
+            'Magebox', 
+            'Scrollbox', 
+            'Spellbox', 
+            'Wizbox'
+        ], 
+        'gboeq': [
+            'Myspell', 
+            'Kubine'
+        ], 
+        'jgritty': [
+            'Boxs', 
+            'Krui',
+            'Escamas-Green'
+        ], 
+        'anana10': [
+            'Bananastan', 
+            'Mile'
+        ], 
+        'anana11': [
+            'Gnnoi'
+        ], 
+        'micah5g': [
+            'Bagbak'
+        ], 
+        'micah6g': [
+            'Badany'
+        ], 
+        'anana7': [
+            'Mages', 
+            'Pagess', 
+            'Roons', 
+            'Spellzz', 
+            'Wordss'
+        ], 
+        'anana8': [
+            'Hottbox'
+        ], 'sealteam99': [
+            'Betweenthelines', 
+            'Chanterpages', 
+            'Leeroyy', 
+            'Necrowords', 
+            'Researchmagi', 
+            'Wizrunes'
+        ], 
+        'anana': [
+            'Ananana', 
+            'Trashcann'
+        ], 
+        'anana4': [
+            'Taeldavdar'
+        ], 
+        'anana20': [
+            'Tunable'
+        ], 
+        'anana21': [
+            'Myspells'
+        ], 
+        'blbankacct1': [
+            'Blencspells', 
+            'Blmagespells', 
+            'Blenchanter', 
+            'Blmagician', 
+            'Blnecromancer', 
+            'Blnecrospells', 
+            'Blwizard', 
+            'Blwizspells'
+        ], 
+        'sealbank': [
+            'Researchwiz'
+        ],
+        'anana14': [
+            'Buypells',
+        ]
+    })
+
 research_mules = [
     'Researchenc',
     'Researchmag',
