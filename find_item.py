@@ -74,7 +74,7 @@ def format_results(results):
     item_name = None
     for line in results.strip().splitlines():
         parts = line.split("\t")
-        # Example parts[0] = /Users/josh/.../Pokewell-Inventory.txt:Bank5-Slot3
+        # Example parts[0] = /Users/vill/.../Spellbox-Inventory.txt:Bank5-Slot3
         # Extract file name only
         filename = os.path.basename(parts[0])
         char_name = filename.split("-Inventory")[0]
