@@ -90,6 +90,7 @@ spellmules = [
     'Tunable',
     #anana21
     'Myspells',
+    'Morebox',
     #blbankacct1
     'Blencspells',
     'Blmagespells',
@@ -184,7 +185,8 @@ account_dict = dict(
             'Tunable'
         ], 
         'anana21': [
-            'Myspells'
+            'Myspells',
+            'Morebox',
         ], 
         'blbankacct1': [
             'Blencspells', 
