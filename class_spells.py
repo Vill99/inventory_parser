@@ -129,6 +129,7 @@ classes = {
         "Resist Magic",
     ],
     'magician': [
+        "Column of Fire",
         "Everfount",
         "Greater Conjuration: Air",
         "Greater Conjuration: Water",
@@ -231,7 +232,6 @@ classes = {
     'wizard': [
         "Thunderclap",
         "Cast Force",
-        "Column of Fire",
         "Column of Lightning",
         "Pillar of Fire",
         "Project Lightning",

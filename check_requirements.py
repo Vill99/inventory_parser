@@ -273,8 +273,8 @@ def get_args():
         help="""Print out items for soulfire quest."""
     )
     args = parser.parse_args()
-    if args.c is None:
-        args.c = "None"    
+    # if args.c is None:
+    #     args.c = "None"    
     return args
 
 def check_class_bots(args):
@@ -394,6 +394,8 @@ def main():
             check_class_bots(args)
         else:
             print("Specify a name or a class, otherwise I have nothing to do.")
+            quit(1)
+            
 
 if __name__ == '__main__':
     main()

@@ -73,67 +73,98 @@ class UpdateSpells():
         self.work = "price_data" + os.sep
         self.spell_dict = {}
 
+        issues = 0
         print("\n"*5)
         self.load_prices()
         self.load_counts()
         self.load_pigparse()
         self.out_of_stock()
-        self.undercut()
-        self.needs_pricing()
-        self.too_low()
+        issues += self.undercut()
+        issues += self.needs_pricing()
+        issues += self.too_low()
         print("\n"*5)
+        sys.exit(issues)
 
 
     def too_low(self):
-        print("\nThe following spells may be priced too low:\n")
+        spells = []
         for spell in self.spell_dict.values():
             try:
                 if int(spell.external) < float(spell.pigprice) / 2:
                     if int(spell.count) < 10:
-                        print(spell)
+                        spells.append(spell)
             except:
                 pass
+        if spells:
+            print("\nThe following spells may be priced too low:\n")
+            for spell in spells:
+                print(spell)
+        return len(spells)
 
 
     def needs_pricing(self):
-        print("\nThe following spells do not have pricing:\n")
+        spells = []
         for spell in self.spell_dict.values():
             try:
                 if spell.internal in (None, "None") or spell.external in (None, "None"):
                     if int(spell.count) > 0:
-                        print(spell)
+                        spells.append(spell)
             except:
                 pass
+        if spells:
+            print("\nThe following spells do not have pricing:\n")
+            for spell in spells:
+                print(spell)
+        return len(spells)
 
 
     def undercut(self):
-        print("\nBeing undercut on the following spells, but none in stock:\n")
+        spells = []
+        issues = 0
         for spell in self.spell_dict.values():
             try:
-                if float(spell.external) > float(spell.pigprice):
+                if float(spell.external) > (float(spell.pigprice) * 2):
                     if spell.count is None:
                         if int(spell.pigprice) != 0:
-                            print(spell)
+                            spells.append(spell)
             except:
                 pass
-        print("\nBeing undercut on the following spells, but inventory is 2 or less:\n")
+        if spells:
+            print("\nBeing undercut on the following spells, but none in stock:\n")
+            for spell in spells:
+                print(spell)
+        issues += len(spells)
+
+        spells = []
         for spell in self.spell_dict.values():
             try:
-                if float(spell.external) > float(spell.pigprice):
+                if float(spell.external) > (float(spell.pigprice) * 1.5):
                     if spell.count in ["1", "2"]:
                         if int(spell.pigprice) != 0:
-                            print(spell)
+                            spells.append(spell)
             except:
                 pass
-        print("\nBeing undercut on the following spells:\n")
+        if spells:
+            print("\nBeing undercut on the following spells, but inventory is 2 or less:\n")
+            for spell in spells:
+                print(spell)
+        issues += len(spells)
+        
+        spells = []
         for spell in self.spell_dict.values():
             try:
-                if float(spell.external) > float(spell.pigprice):
+                if float(spell.external) > (float(spell.pigprice) * 1.1):
                     if spell.count is not None and spell.count not in ["1", "2"]:
                         if int(spell.pigprice) != 0:
-                            print(spell)
+                            spells.append(spell)
             except:
                 pass
+        if spells:
+            print("\nBeing undercut on the following spells:\n")
+            for spell in spells:
+                print(spell)
+        issues += len(spells)
+        return issues
 
 
     def out_of_stock(self):
