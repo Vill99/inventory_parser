@@ -350,20 +350,21 @@ def check_requirements(args):
         print("SOULFIRE".center(45, ' '))
         for item in soulfire_parts:
             check_item(args, item, counts)
-    if args.c.lower() == "cleric":
-        print("CLERIC".center(45, ' '))
-        for item in cleric_items_to_check:
-            check_item(args, item, counts)
-        for item in cleric_items_to_count:
-            count_item(item, counts)
-        if args.gear:
-            print("GEAR".center(45, ' '))
-            for item in cleric_gear:
+    if args.c:
+        if args.c.lower() == "cleric":
+            print("CLERIC".center(45, ' '))
+            for item in cleric_items_to_check:
                 check_item(args, item, counts)
-        if args.thurg:
-            print("THURG ARMOR".center(45, ' '))
-            for item in cleric_thurg:
-                check_item(args, item, counts)
+            for item in cleric_items_to_count:
+                count_item(item, counts)
+            if args.gear:
+                print("GEAR".center(45, ' '))
+                for item in cleric_gear:
+                    check_item(args, item, counts)
+            if args.thurg:
+                print("THURG ARMOR".center(45, ' '))
+                for item in cleric_thurg:
+                    check_item(args, item, counts)
     if args.c.lower() == "mage":
         print("MAGE".center(45, ' '))
         for item in mage_items_to_check:
