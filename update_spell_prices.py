@@ -139,13 +139,13 @@ class UpdateSpells():
         for spell in self.spell_dict.values():
             try:
                 if float(spell.external) > (float(spell.pigprice) * 1.5):
-                    if spell.count in ["1", "2"]:
+                    if spell.count in ["1", "2", "3"]:
                         if int(spell.pigprice) != 0:
                             spells.append(spell)
             except:
                 pass
         if spells:
-            print("\nBeing undercut on the following spells, but inventory is 2 or less:\n")
+            print("\nBeing undercut on the following spells, but inventory is 3 or less:\n")
             for spell in spells:
                 print(spell)
         issues += len(spells)
