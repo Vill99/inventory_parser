@@ -127,7 +127,7 @@
 "Greater Conjuration: Fire", 500, 500
 "Greater Conjuration: Water", 500, 500
 "Greater Summoning: Earth",150,100
-"Greater Vocaration: Air",50, 20
+"Greater Vocaration: Air",100, 20
 "Greater Vocaration: Fire",170, 100
 "Greater Vocaration: Water",600, 200
 "Harmshield",200, 15

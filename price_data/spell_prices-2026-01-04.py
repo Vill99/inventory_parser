@@ -5,6 +5,7 @@
 "Aegis",50, 50
 "Aegolism",80, 50
 "Allure",600, 400
+"Antidote",50, 50
 "Arch Lich",100, 100
 "Asphyxiate",100, 100
 "Atol's Spectral Shackles",50, 50
@@ -85,6 +86,7 @@
 "Divine Strength",20, 15
 "Draught of Fire",None, None
 "Draught of Jiva",40, 10
+"Dread of Night",30,30
 "Dyzil's Deafening Decoy",240, 100
 "Egress",None, None
 "Elemental Maelstrom",40, 20
@@ -118,16 +120,16 @@
 "Gift of Brilliance",400, 300
 "Gift of Insight",350, 50
 "Gift of Pure Thought",6900, 5000
-"Gift of Xev",76, 25
+"Gift of Xev",60, 25
 "Girdle of Karana",175, 100
 "Glamour of Tunare",None, None
 "Gravity Flux",75, 20
 "Great Divide Portal",25, 15
-"Greater Conjuration: Air", 540, 500
-"Greater Conjuration: Fire", 500, 500
+"Greater Conjuration: Air", 440, 500
+"Greater Conjuration: Fire", 450, 500
 "Greater Conjuration: Water", 500, 500
 "Greater Summoning: Earth",150,100
-"Greater Vocaration: Air",50, 20
+"Greater Vocaration: Air",100, 20
 "Greater Vocaration: Fire",170, 100
 "Greater Vocaration: Water",600, 200
 "Harmshield",200, 15
@@ -204,6 +206,7 @@
 "Resist Magic",10, 10
 "Restless Bones",15,15
 "Retribution of Al'Kabor",50, 50
+"Root",5, 5
 "Sacrifice",None, None
 "Scale of Wolf", 50, 50
 "Scars of Sigil",40, 25
@@ -267,7 +270,7 @@
 "Unfailing Reverence", 50, 50
 "Unswerving Hammer",None, None
 "Upheaval",45, 30
-"Vampiric Curse", 40, 40
+"Vampiric Curse", 33, 33
 "Velocity",30, 20
 "Vengeance of Al'Kabor",250, 50
 "Visions of Grandeur",10000, 5000
